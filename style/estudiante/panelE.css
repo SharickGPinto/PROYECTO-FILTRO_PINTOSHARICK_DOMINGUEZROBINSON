@@ -126,22 +126,25 @@ body {
 
 .estadisticas {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 8px;
+    grid-template-columns: repeat(3, 220px);
+    gap: 40px;
+    justify-content: center;
+    margin-top: 8px;
+    height: 80px;
 }
 
-
-.cursos2{
- grid-column-start: 2;
-    grid-row-start: 2;
+.card {
+    display: grid;
+    grid-template-columns: 38px 1fr;
+    align-items: center;
+    column-gap: 8px;
+    padding: 10px;
+    border: 1px solid #9c9c9c;
+    border-radius: 6px;
 }
-.pendientes2{
-   grid-column-start: 3;
-    grid-row-start: 2;
-}
-.progreso2{
-grid-column-start: 4;
-    grid-row-start: 2;
 
+.icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
 }
