@@ -2,6 +2,15 @@
     font-family: 'letras';
     src: url(../../fonts/Inter/static/Inter_24pt-Light.ttf);
 }
+@font-face {
+    font-family: 'mayuscula';
+    src: url(../../fonts/Inter/static/Inter_28pt-SemiBold.ttf);
+}
+p{
+    font-family: 'mayuscula';
+    margin-left: 60px;
+    
+}
 
 * {
     margin: 0;
@@ -147,4 +156,14 @@ body {
     width: 32px;
     height: 32px;
     object-fit: contain;
+}
+.imagen{
+    background-image: url(../../img/cursos.png);
+    position: absolute;
+    background-size: cover;
+    width: 17vw;
+    height: 10vw;
+    left: 9vw;  
+    margin-top: 0.5vw;
+  
 }
