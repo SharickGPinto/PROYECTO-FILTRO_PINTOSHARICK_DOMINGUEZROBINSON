@@ -2,6 +2,15 @@
     font-family: 'letras';
     src: url(../../fonts/Inter/static/Inter_24pt-Light.ttf);
 }
+@font-face {
+    font-family: 'mayuscula';
+    src: url(../../fonts/Inter/static/Inter_28pt-SemiBold.ttf);
+}
+p{
+    font-family: 'mayuscula';
+    margin-left: 60px;
+    
+}
 
 * {
     margin: 0;
@@ -122,4 +131,39 @@ body {
     height: 100%;
     object-fit: contain;
     display: block;
+}
+
+.estadisticas {
+    display: grid;
+    grid-template-columns: repeat(3, 220px);
+    gap: 40px;
+    justify-content: center;
+    margin-top: 8px;
+    height: 80px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 38px 1fr;
+    align-items: center;
+    column-gap: 8px;
+    padding: 10px;
+    border: 1px solid #9c9c9c;
+    border-radius: 6px;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+.imagen{
+    background-image: url(../../img/cursos.png);
+    position: absolute;
+    background-size: cover;
+    width: 17vw;
+    height: 10vw;
+    left: 9vw;  
+    margin-top: 0.5vw;
+  
 }
