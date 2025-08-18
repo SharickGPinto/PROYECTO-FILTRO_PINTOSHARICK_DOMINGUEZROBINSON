@@ -10,6 +10,7 @@
     font-family: 'letras';
 }
 
+
 body {
     width: 100%;
     height: auto;
@@ -19,6 +20,7 @@ body {
 }
 
 .contenedor{
+    margin-top: 5%;
     border: 2px solid gray;
     border-radius: 1rem;
     width: 30vw;
@@ -28,15 +30,11 @@ body {
     justify-self: center;
 }
 
-a{
-    all: unset;
-}
-
-
-.inputs{
+input{
+    width: 100%;
     display: block;
     justify-self: center;
-    width: 50%;
+    width: 80%;
 }
 
 input::placeholder{
@@ -50,7 +48,7 @@ input::placeholder{
     background-size: 2rem;
     background-repeat: no-repeat;
     background-position: 5%;
-    margin-top: 1rem;
+    margin-top: 3rem;
     padding: 1rem;
     border-radius: 1rem;
 }
@@ -66,6 +64,7 @@ input::placeholder{
 }
 
 p{
+    margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,22 +72,38 @@ p{
 }
 
 .INICIAR_SESION{
-    position: relative;
+    display: flex;
+    margin-top: 5%;
     background-color: rgb(30, 58, 138);
-    top: 1rem;
-    left: 3rem;
+    justify-content: center;
+    justify-self: center;
     width: 80%;
-    height: 80%;
+    height: 15%;
     border-radius: 1rem ;
     font-size: 1.8rem;
+}
+
+
+.INICIAR_SESION a{
     color: white;
+    text-decoration: none;
+}
+
+.forsaken_password{
+    display: flex;
+    justify-self: center;
+    margin-top: 5%;
+}
+
+.Olvidaste_la_contraseña a{
+    
+    background-color: white;
+    font-size: 1.3rem;
+    color: gray;
+    text-decoration: none;
 }
 
 .Olvidaste_la_contraseña{
-    display: flex;
-    margin-right: 100rem;
-    all: unset;
-    font-size: 1.3rem;
-    color: gray;
+    border: none;
 }
 
