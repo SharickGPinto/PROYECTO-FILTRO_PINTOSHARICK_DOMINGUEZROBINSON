@@ -39,3 +39,136 @@ body {
     background-color :rgb(30, 58, 138);
     color: white;
 }
+
+.contenedor{
+    background: linear-gradient(rgb(243, 240, 240) 30%, rgb(228, 228, 228) 30%);
+    height: 20vh;
+    width: 90vw;
+    margin-top: 10rem;
+    justify-self: center;
+}
+
+.perfil_perfil{
+    position: relative;
+    left: 48%;
+    border-radius: 100%;
+}
+
+.opciones{
+    display: flex;
+    gap: 45%;
+    justify-self: center;
+    margin-top: 1.5rem;
+    white-space: nowrap;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.Informacion_personal{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 4rem;
+    width: 90vw;
+    height: 15vw;
+    background-color: rgb(228, 228, 228);
+    justify-self: center;
+}
+
+.Informacion_personal h2{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    font-size: 2rem;
+}
+
+.Informacion_personal p{
+    position: relative;
+    font-size: 1.2rem;
+    top: 20px;
+    left: 10px;
+    grid-column: 1;
+}
+
+.Nombre_completo{
+    position: relative;
+    left: 10px;
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: .3rem;
+    width: 20rem;
+    height: 2.7rem;
+}
+
+.Correo{
+    position: relative;
+    left: 10px;
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: .3rem;
+    width: 20rem;
+    height: 2.7rem;
+}
+
+.part2{
+    position: relative;
+    bottom: 6rem;
+    grid-column: 2;
+}
+
+.Pais{
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: .3rem;
+    width: 20rem;
+    height: 2.7rem;
+}
+
+.Edad{
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: .3rem;
+    width: 20rem;
+    height: 2.7rem;
+}
+
+.part3{
+    position: relative;
+    bottom: 6rem;
+    grid-column: 3;
+}
+
+.cursos {
+  margin: 40px;
+}
+
+.cursos h2 {
+  margin-bottom: 20px;
+}
+
+.card {
+  display: flex;              
+  align-items: center;        
+  gap: 15px;                  
+  border: 2px solid #ccc;     
+  border-radius: 10px;        
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  max-width: 300px;           
+  background: white;          
+  transition: 0.3s;           
+}
+
+.card:hover {
+  border-color: #1d4ed8;      
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
