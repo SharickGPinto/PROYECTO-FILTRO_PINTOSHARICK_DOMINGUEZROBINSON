@@ -1,9 +1,7 @@
 @font-face {
     font-family: 'letras';
-    src: url(../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+    src: url(../fonts/Inter/static/Inter_24pt-Light.ttf);
 }
-
-
 
 * {
     margin: 0;
@@ -18,157 +16,110 @@ body {
     overflow-x: hidden;
     position: absolute;
     background-size: cover;
-    position: absolute;
     margin-left: 1vw;
+    margin-top: max(56px, 4vw);
 }
 
 .cabeza {
-    margin-left: -1vw;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 4vw;
+    min-height: 56px;
+    padding: 1vw 3vw;
+    background: #1e3a8a;
+    color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+    z-index: 1000;
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    position: fixed;
-    font-family: 'inter';
     font-size: 1.1vw;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-    background-color :rgb(30, 58, 138);
-    color: white;
 }
 
-.contenedor{
-    background: linear-gradient(rgb(243, 240, 240) 30%, rgb(228, 228, 228) 30%);
-    height: 20vh;
-    width: 90vw;
-    margin-top: 10rem;
-    justify-self: center;
+.Lms {
+    font-weight: 800;
+    letter-spacing: .5px;
 }
 
-.perfil_perfil{
+.panel,
+.cursos,
+.asignaciones,
+.progreso {
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 2vw;
     position: relative;
-    left: 48%;
-    border-radius: 100%;
+    padding: .2rem 0;
 }
 
-.opciones{
+.panel:hover::after,
+.cursos:hover::after,
+.asignaciones:hover::after,
+.progreso:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 2px;
+    background: #fff;
+}
+
+.panel,
+.cursos,
+.asignaciones,
+.progreso {
+    display: inline-block;
+}
+
+.cabeza>.panel {
+    margin-left: auto;
+}
+
+.cabeza>.progreso {
+    margin-right: auto;
+}
+
+.perfil {
     display: flex;
-    gap: 45%;
-    justify-self: center;
-    margin-top: 1.5rem;
-    white-space: nowrap;
+    align-items: end;
+    justify-content: end;
+    cursor: pointer;
+    width: 3vw;
+    height: 3vw;
+    min-width: 24px;
+    min-height: 24px;
 }
 
-a{
-    text-decoration: none;
-    color: black;
-    font-size: 1.3rem;
+.notificaciones {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    cursor: pointer;
+    width: 3vw;
+    height: 3vw;
+    min-width: 24px;
+    min-height: 24px;
 }
 
-.Informacion_personal{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    margin-top: 4rem;
-    width: 90vw;
-    height: 15vw;
-    background-color: rgb(228, 228, 228);
-    justify-self: center;
+.configuracion {
+    margin-top: 0.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 4vw;
+    height: 4vw;
+    min-width: 24px;
+    min-height: 24px;
 }
 
-.Informacion_personal h2{
-    position: relative;
-    top: 10px;
-    left: 10px;
-    font-size: 2rem;
-}
-
-.Informacion_personal p{
-    position: relative;
-    font-size: 1.2rem;
-    top: 20px;
-    left: 10px;
-    grid-column: 1;
-}
-
-.Nombre_completo{
-    position: relative;
-    left: 10px;
-    border: 1px solid black;
-    border-radius: .5rem;
-    padding: .3rem;
-    width: 20rem;
-    height: 2.7rem;
-}
-
-.Correo{
-    position: relative;
-    left: 10px;
-    border: 1px solid black;
-    border-radius: .5rem;
-    padding: .3rem;
-    width: 20rem;
-    height: 2.7rem;
-}
-
-.part2{
-    position: relative;
-    bottom: 6rem;
-    grid-column: 2;
-}
-
-.Pais{
-    border: 1px solid black;
-    border-radius: .5rem;
-    padding: .3rem;
-    width: 20rem;
-    height: 2.7rem;
-}
-
-.Edad{
-    border: 1px solid black;
-    border-radius: .5rem;
-    padding: .3rem;
-    width: 20rem;
-    height: 2.7rem;
-}
-
-.part3{
-    position: relative;
-    bottom: 6rem;
-    grid-column: 3;
-}
-
-.cursos {
-  margin: 40px;
-}
-
-.cursos h2 {
-  margin-bottom: 20px;
-}
-
-.card {
-  display: flex;              
-  align-items: center;        
-  gap: 15px;                  
-  border: 2px solid #ccc;     
-  border-radius: 10px;        
-  padding: 15px 20px;
-  margin-bottom: 20px;
-  max-width: 300px;           
-  background: white;          
-  transition: 0.3s;           
-}
-
-.card:hover {
-  border-color: #1d4ed8;      
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.card img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
+.cabeza img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
