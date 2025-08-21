@@ -158,20 +158,35 @@ input::placeholder{
 }
 
 .Cursos{
-    display: inline-flex;
+    display:flex;
     font-size: 2rem;
     margin-top: 10%;
-    gap: 8vw;
+    flex-direction: row;
+    gap: 25rem;
 }
 
 .Sub_cursos{
-    display: inline-flex;
+    gap: 24rem;
+    display: flex;
     font-size: 2rem;
     margin-top: 1%;
-    gap: 5vw;
+    flex-direction: row;
 }
 
-span{
+.Estado{
+    background-color: greenyellow;
+    border-radius: 10rem;
+    padding: 0.5rem;
+}
+
+.Estado p{
     position: relative;
-    left: 1rem;
+    right: 2rem;
+}
+
+select{
+    margin-left: 5%;
+    background-color: #fff;
+    border: none;
+    font-size: 2rem;
 }
