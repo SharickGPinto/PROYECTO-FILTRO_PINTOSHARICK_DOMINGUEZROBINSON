@@ -2,14 +2,17 @@
     font-family: 'letras';
     src: url(../../fonts/Inter/static/Inter_24pt-Light.ttf);
 }
+
 @font-face {
     font-family: 'mayuscula';
     src: url(../../fonts/Inter/static/Inter_28pt-SemiBold.ttf);
 }
-p{
+
+p {
     font-family: 'mayuscula';
     margin-left: 60px;
-    
+    font-size: 30px;
+
 }
 
 * {
@@ -152,18 +155,29 @@ body {
     border-radius: 6px;
 }
 
-.icon {
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
-}
-.imagen{
+.imagencita {
     background-image: url(../../img/cursos.png);
     position: absolute;
     background-size: cover;
-    width: 17vw;
-    height: 10vw;
-    left: 9vw;  
-    margin-top: 0.5vw;
-  
+    width: 20vw;
+    height: 13vw;
+    left: 10vw;
+    margin-top: 0.8vw;
+
+}
+
+.ver{
+    margin-top: 20vw;
+}
+
+.config{
+    display: grid;
+    grid-template-columns:  2px 1fr;
+    align-items: center;
+    column-gap: 8px;
+    padding: 10px;
+}
+.iconcito{
+    width: 3vw;
+    height: 3vw;
 }
