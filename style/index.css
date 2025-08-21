@@ -103,6 +103,24 @@ p{
     text-decoration: none;
 }
 
+select{ 
+    background-image: url(../img/perfil.png);
+    position:relative;
+    left: 10%;
+    width: 24vw;
+    border: 2px solid;
+    background-size: 2.3rem;
+    background-repeat: no-repeat;
+    background-position: 2%;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+option{
+    text-align: center;
+}
+
 .Olvidaste_la_contraseña{
     border: none;
 }
