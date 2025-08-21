@@ -135,48 +135,56 @@ body {
 
 .Gestion_De_Cursos{
     position: relative;
-    top: 10rem;
-    font-size: 5rem;
+    top: 10vh;
+    font-size: 3vw;
     margin-left: 4%;
 }
 
 .Gestion_De_Cursos input{
     background-image: url(./../../img/lupa.jpg);
-    background-size: 10%;
+    background-size: 20%;
+    object-fit: cover;
     background-repeat: no-repeat;
     border-radius: 1rem;
-    padding: 2rem;
-    width: 22vw;
-    min-width: 10vw;
+    padding: 2%;
+    width: 34%;
+    min-width: 25%;
+    overflow: hidden;
 }
 
 input::placeholder{
     position: relative;
     left: 20%;
-    top: .5rem;
-    font-size: 2rem;
+    top: .5vh;
+    font-size: 2vw;
 }
 
 .Cursos{
+    max-width: 95%;
     display:flex;
     font-size: 2rem;
     margin-top: 10%;
     flex-direction: row;
-    gap: 25rem;
+    gap: 7%;
 }
 
 .Sub_cursos{
-    gap: 24rem;
+    max-width: 95%;
+    gap: 6.5%;
     display: flex;
     font-size: 2rem;
+    margin-left: 1%;
     margin-top: 1%;
     flex-direction: row;
 }
 
 .Estado{
+    object-fit: cover;
     background-color: greenyellow;
     border-radius: 10rem;
-    padding: 0.5rem;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    
 }
 
 .Estado p{
@@ -189,4 +197,9 @@ select{
     background-color: #fff;
     border: none;
     font-size: 2rem;
+}
+
+hr{
+    width: 100vw;
+    min-width: 90vw;
 }
