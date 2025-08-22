@@ -179,13 +179,18 @@ input::placeholder{
 }
 
 .Estado{
-    background-color: greenyellow;
+    background-color: rgb(229, 255, 115);
     border-radius: 10rem;
     padding-bottom: 1vh;
     padding-top: 1vh;
 }
 
-
+.Estado1{
+    background-color: rgb(53, 240, 109);
+    border-radius: 10rem;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+}
 
 select{
     margin-left: 5%;
