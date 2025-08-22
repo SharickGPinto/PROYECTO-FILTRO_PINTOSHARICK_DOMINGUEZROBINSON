@@ -185,7 +185,12 @@ input::placeholder{
     padding-top: 1vh;
 }
 
-
+.Estado1{
+    background-color: rgb(145, 145, 145);
+    border-radius: 10rem;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+}
 
 select{
     margin-left: 5%;
