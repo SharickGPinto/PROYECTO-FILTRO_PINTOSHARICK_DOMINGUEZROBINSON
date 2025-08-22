@@ -3,11 +3,23 @@
     src: url(../../fonts/Inter/static/Inter_24pt-Light.ttf);
 }
 
+@font-face {
+    font-family: 'mayuscula';
+    src: url(../../fonts/Inter/static/Inter_28pt-SemiBold.ttf);
+}
+
+p {
+    font-family: 'mayuscula';
+    margin-left: 60px;
+    font-size: 20px;
+
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    font-family: 'letras';
+    font-family: 'mayuscula';
 }
 
 body {
@@ -83,6 +95,7 @@ body {
     margin-right: auto;
 }
 
+
 .perfil {
     display: flex;
     align-items: end;
@@ -122,4 +135,72 @@ body {
     height: 100%;
     object-fit: contain;
     display: block;
+}
+
+.estadisticas {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    gap: 40px;
+    justify-content: center;
+    height: 20px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    align-items: center;
+    column-gap: 8px;
+    padding: 10px;
+    border: 1px solid #9c9c9c;
+    border-radius: 6px;
+    height: 6vw;
+}
+
+.icon{
+    height: 20px;
+    width: 20px;
+}
+
+.cursosI{
+    margin-top: 8vw;
+}
+
+.imagencita {
+    background-image: url(../../img/pc.png);
+    position: absolute;
+    background-size: cover;
+    width: 10vw;
+    height: 10vw;
+    left: 10vw;
+    margin-top: 0.8vw;
+}
+.imagencita2 {
+    background-image: url(../../img/matec.jpg);
+    position: absolute;
+    background-size: cover;
+    width: 10vw;
+    height: 10vw;
+    left: 30vw;
+    margin-top: 0.8vw;
+}
+
+.curso2{
+    padding-left: 12vw;
+    padding-top: 10vw;
+}
+
+.ver{
+    margin-top: 5vw;
+}
+
+.config{
+    display: grid;
+    grid-template-columns:  2px 1fr;
+    align-items: center;
+    column-gap: 8px;
+    padding: 10px;
+}
+.iconcito{
+    width: 3vw;
+    height: 3vw;
 }
