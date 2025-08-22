@@ -156,12 +156,12 @@ body {
     height: 6vw;
 }
 
-.icon{
+.icon {
     height: 20px;
     width: 20px;
 }
 
-.cursosI{
+.cursosI {
     margin-top: 8vw;
 }
 
@@ -176,37 +176,40 @@ body {
 
 }
 
-.ver{
+.ver {
     margin-top: 15vw;
 }
 
-.config{
+.config {
     display: grid;
-    grid-template-columns:  2px 1fr;
+    grid-template-columns: 2px 1fr;
     align-items: center;
     column-gap: 8px;
     padding: 10px;
 }
-.iconcito{
+
+.iconcito {
     width: 3vw;
     height: 3vw;
 }
-.Gestion_De_Cursos{
+
+.Gestion_De_Cursos {
     position: relative;
     top: 3vw;
     font-size: 2vw;
 }
 
-input::placeholder{
+input::placeholder {
     position: relative;
     left: 20%;
     top: .5vh;
     font-size: 2vw;
 }
 
-.Cursos, .Sub_cursos {
+.Cursos,
+.Sub_cursos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
     align-items: center;
     padding: 1rem 0;
@@ -223,7 +226,7 @@ input::placeholder{
     margin-top: 20px;
 }
 
-.Estado{
+.Estado {
     background-color: greenyellow;
     border-radius: 10rem;
     padding-bottom: 1vh;
@@ -232,19 +235,43 @@ input::placeholder{
 
 
 
-select{
+select {
     margin-left: 5%;
     background-color: #fff;
     border: none;
     font-size: 2rem;
 }
 
-hr{
+hr {
     width: 100vw;
     min-width: 90vw;
 }
 
-.Sub_cursos img{
+.Sub_cursos img {
     width: 20px;
     height: 20px;
+}
+
+.progress_bar {
+    width: 15vw;
+    height: 40px;
+    background-color: #24ff77;
+    border-radius: 25px;
+}
+
+.progress_bar span{
+    position: relative;
+    top: 10px;
+}
+
+.progress_bar1 {
+    width: 15vw;
+    height: 40px;
+    background-color: #24ff77;
+    border-radius: 25px;
+}
+
+.progress_bar1 span{
+    position: relative;
+    top: 10px;
 }
