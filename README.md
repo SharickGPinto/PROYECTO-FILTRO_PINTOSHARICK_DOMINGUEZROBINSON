@@ -18,7 +18,7 @@ CSS3 - Estilos y diseño responsive
 
 Git - Control de versiones
 
-FIGMA - Estructura inicial
+[FIGMA](https://www.figma.com/design/gnG5UiR0jEKoYFQcdv6ta2/Proyecto-js?node-id=72-303&t=6SIICq78AQTLSDGs-0) - Estructura inicial
 
 javaScript - Funciones
 
