@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'letras';
+    src: url(../../fonts/Inter/static/Inter_24pt-Light.ttf);
+}
+
+@font-face {
+    font-family: 'mayuscula';
+    src: url(../../fonts/Inter/static/Inter_28pt-SemiBold.ttf);
+}
+
+p {
+    font-family: 'mayuscula';
+    margin-left: 60px;
+    font-size: 30px;
+
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'letras';
+}
+
+body {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    position: absolute;
+    background-size: cover;
+    margin-left: 1vw;
+    margin-top: max(56px, 4vw);
+}
+
+.cabeza {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4vw;
+    min-height: 56px;
+    padding: 1vw 3vw;
+    background: #1e3a8a;
+    color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1vw;
+}
+
+.Lms {
+    font-weight: 800;
+    letter-spacing: .5px;
+}
+
+.panel,
+.cursos,
+.asignaciones,
+.progreso {
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 2vw;
+    position: relative;
+    padding: .2rem 0;
+}
+
+.panel:hover::after,
+.cursos:hover::after,
+.asignaciones:hover::after,
+.progreso:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 2px;
+    background: #fff;
+}
+
+.panel,
+.cursos,
+.asignaciones,
+.progreso {
+    display: inline-block;
+}
+
+.cabeza>.panel {
+    margin-left: auto;
+}
+
+.cabeza>.progreso {
+    margin-right: auto;
+}
+
+
+.perfil {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    cursor: pointer;
+    width: 3vw;
+    height: 3vw;
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.notificaciones {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    cursor: pointer;
+    width: 3vw;
+    height: 3vw;
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.configuracion {
+    margin-top: 0.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 4vw;
+    height: 4vw;
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.cabeza img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.estadisticas {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    gap: 40px;
+    justify-content: center;
+    height: 20px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    align-items: center;
+    column-gap: 8px;
+    padding: 10px;
+    border: 1px solid #9c9c9c;
+    border-radius: 6px;
+    height: 6vw;
+}
+
+.icon{
+    height: 20px;
+    width: 20px;
+}
+
+.cursosI{
+    margin-top: 8vw;
+}
+
+.imagencita {
+    background-image: url(../../img/cursos.png);
+    position: absolute;
+    background-size: cover;
+    width: 20vw;
+    height: 13vw;
+    left: 10vw;
+    margin-top: 0.8vw;
+
+}
+
+.ver{
+    margin-top: 15vw;
+}
+
+.config{
+    display: grid;
+    grid-template-columns:  2px 1fr;
+    align-items: center;
+    column-gap: 8px;
+    padding: 10px;
+}
+.iconcito{
+    width: 3vw;
+    height: 3vw;
+}
+.Gestion_De_Cursos{
+    position: relative;
+    top: 3vw;
+    font-size: 2vw;
+}
+
+input::placeholder{
+    position: relative;
+    left: 20%;
+    top: .5vh;
+    font-size: 2vw;
+}
+
+.Cursos, .Sub_cursos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    text-align: center;
+    align-items: center;
+    padding: 1rem 0;
+    margin-top: 3vw;
+}
+
+.Cursos {
+    font-size: 2rem;
+    border-bottom: 2px solid #000000;
+}
+
+.Sub_cursos {
+    border-bottom: 1px solid #000000;
+    margin-top: 20px;
+}
+
+.Estado{
+    background-color: greenyellow;
+    border-radius: 10rem;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+}
+
+
+
+select{
+    margin-left: 5%;
+    background-color: #fff;
+    border: none;
+    font-size: 2rem;
+}
+
+hr{
+    width: 100vw;
+    min-width: 90vw;
+}
+
+.Sub_cursos img{
+    width: 20px;
+    height: 20px;
+}
