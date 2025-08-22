@@ -8,7 +8,7 @@
 }
 p{
     font-family: 'mayuscula';
-    margin-left: 60px;
+    margin-left: 10px;
     
 }
 
@@ -16,7 +16,7 @@ p{
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    font-family: 'letras';
+    font-family: 'mayuscula';
 }
 
 body {
@@ -135,9 +135,9 @@ body {
 
 .Gestion_De_Cursos{
     position: relative;
-    top: 10vh;
+    top: 3vw;
     font-size: 3vw;
-    margin-left: 4%;
+    margin-left: 60px
 }
 
 .Gestion_De_Cursos input{
@@ -159,38 +159,33 @@ input::placeholder{
     font-size: 2vw;
 }
 
-.Cursos{
-    max-width: 95%;
-    display:flex;
-    font-size: 2rem;
-    margin-top: 10%;
-    flex-direction: row;
-    gap: 7%;
+.Cursos, .Sub_cursos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    text-align: center;
+    align-items: center;
+    padding: 1rem 0;
+    margin-top: 3vw;
 }
 
-.Sub_cursos{
-    max-width: 95%;
-    gap: 6.5%;
-    display: flex;
+.Cursos {
     font-size: 2rem;
-    margin-left: 1%;
-    margin-top: 1%;
-    flex-direction: row;
+    border-bottom: 2px solid #000000;
+}
+
+.Sub_cursos {
+    border-bottom: 1px solid #000000;
+    margin-top: 20px;
 }
 
 .Estado{
-    object-fit: cover;
     background-color: greenyellow;
     border-radius: 10rem;
     padding-bottom: 1vh;
     padding-top: 1vh;
-    
 }
 
-.Estado p{
-    position: relative;
-    right: 2rem;
-}
+
 
 select{
     margin-left: 5%;
@@ -203,3 +198,4 @@ hr{
     width: 100vw;
     min-width: 90vw;
 }
+
