@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'letras';
+    src: url(../../fonts/Inter/static/Inter_24pt-Light.ttf);
+}
+
+@font-face {
+    font-family: 'mayuscula';
+    src: url(../../fonts/Inter/static/Inter_28pt-SemiBold.ttf);
+}
+
+p {
+    font-family: 'mayuscula';
+    margin-left: 5px;
+    font-size: 30px;
+
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'mayuscula';
+}
+
+body {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    position: absolute;
+    background-size: cover;
+    margin-left: 1vw;
+    margin-top: max(56px, 4vw);
+}
+
+.cabeza {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4vw;
+    min-height: 56px;
+    padding: 1vw 3vw;
+    background: #1e3a8a;
+    color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1vw;
+}
+
+.Lms {
+    font-weight: 800;
+    letter-spacing: .5px;
+}
+
+.panel,
+.cursos,
+.asignaciones,
+.progreso {
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 2vw;
+    position: relative;
+    padding: .2rem 0;
+}
+
+.panel:hover::after,
+.cursos:hover::after,
+.asignaciones:hover::after,
+.progreso:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 2px;
+    background: #fff;
+}
+
+.panel,
+.cursos,
+.asignaciones,
+.progreso {
+    display: inline-block;
+}
+
+.cabeza>.panel {
+    margin-left: auto;
+}
+
+.cabeza>.progreso {
+    margin-right: auto;
+}
+
+
+.perfil {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    cursor: pointer;
+    width: 3vw;
+    height: 3vw;
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.notificaciones {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    cursor: pointer;
+    width: 3vw;
+    height: 3vw;
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.configuracion {
+    margin-top: 0.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 4vw;
+    height: 4vw;
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.cabeza img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.contenedor1 {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 15px;
+        height: 5px;
+    }
+    .div2 {
+        grid-column-start: 1;
+        grid-row-start: 2
+    }
+    
+    .div3 {
+        height: 30px;
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+    
+    .div4 {
+        grid-column-start: 1;
+        grid-row-start: 4;
+    }
+    
+    .div5 {
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+
+    .div6 {
+        grid-column: span 5 / span 5;
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+    .div7{
+        grid-column: span 5 / span 5;
+        grid-row-start: 4;
+    }
+
+
+
+    .Estado{
+        background-color:  #1e3a8a;
+        border-radius: 10rem;
+        padding-bottom: 1vh;
+        padding-top: 1vh;
+        text-align: center;
+        width: 100px;
+        color: white;
+    }
+
+    .Sub_cursos {
+        border-bottom: 1px solid #000000;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+        text-align: center;
+        align-items: center;
+        padding: 1rem 0;
+        margin-top: 3vw;  
+    }
+.icon {
+    height: 20px;
+    width: 20px;
+}
+
+.cursosI {
+    margin-top: 8vw;
+}
+
+.imagencita {
+    background-image: url(../../img/cursos.png);
+    position: absolute;
+    background-size: cover;
+    width: 20vw;
+    height: 13vw;
+    left: 10vw;
+    margin-top: 0.8vw;
+
+}
+
+.ver {
+    margin-top: 15vw;
+}
+
+.config {
+    display: grid;
+    grid-template-columns: 2px 1fr;
+    align-items: center;
+    column-gap: 8px;
+    padding: 10px;
+}
+
+.iconcito {
+    width: 3vw;
+    height: 3vw;
+}
+
+.Gestion_De_Cursos {
+    position: relative;
+    top: 3vw;
+    font-size: 2vw;
+}
+.Gestion_De_Cursos input{
+    background-image: url(../../img/lupa.jpg);
+    background-size: 20vw;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    padding: 2%;
+    width: 34%;
+    min-width: 25%;
+    overflow: hidden;
+}
+
+input::placeholder{
+    position: relative;
+    left: 20%;
+    top: .5vh;
+    font-size: 2vw;
+}
