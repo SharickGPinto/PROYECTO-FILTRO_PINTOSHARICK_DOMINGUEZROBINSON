@@ -223,8 +223,9 @@ input::placeholder {
 
 .Sub_cursos {
     border-bottom: 1px solid #000000;
-    margin-top: 20px;
+    margin-top: 2px;
 }
+
 
 .Estado {
     background-color: greenyellow;
@@ -248,8 +249,8 @@ hr {
 }
 
 .Sub_cursos img {
-    width: 20px;
-    height: 20px;
+    width: 5vw;
+    height: 5vw;
 }
 
 .progress_bar {
@@ -282,3 +283,4 @@ hr {
     padding-bottom: 1vh;
     padding-top: 1vh;
 }
+
