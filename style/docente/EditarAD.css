@@ -137,15 +137,15 @@ body {
 
 
 .contenedor {
-    width: 100%;
+    width: fit-content;
     display: flex;
-    justify-content: center;
+    justify-self: center;
     padding: 2vw;
 }
 
 
 .tarjeta {
-    width: 60vw;
+    width: fit-content;
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.76);
     border-radius: 70px;
@@ -154,7 +154,7 @@ body {
 
 
 .titulo {
-    font-size: 2vw;
+    font-size: clamp(14px, 1.6vw, 5vw);
     color: #000000;
     margin-bottom: clamp(14px, 1.6vw, 20px);
 }
@@ -177,13 +177,6 @@ body {
     color: #00000067;
 }
 
-.select {
-    position: relative;
-    border-radius: 10px;
-    background: #fff;
-    width: 10vw;
-}
-
 .entrada-select {
     padding-top: 1vw;
     border: none;
@@ -192,8 +185,7 @@ body {
 }
 
 .acciones {
-    display: flex;
-    justify-content: flex-end;
+    margin-left: 20vw;
     gap: 40px;
 }
 
