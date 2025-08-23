@@ -2,14 +2,16 @@
     font-family: 'letras';
     src: url(../../fonts/Inter/static/Inter_24pt-Light.ttf);
 }
+
 @font-face {
     font-family: 'mayuscula';
     src: url(../../fonts/Inter/static/Inter_28pt-SemiBold.ttf);
 }
-p{
+
+p {
     font-family: 'mayuscula';
     margin-left: 10px;
-    
+
 }
 
 * {
@@ -133,14 +135,14 @@ body {
     display: block;
 }
 
-.Gestion_De_Cursos{
+.Gestion_De_Cursos {
     position: relative;
     top: 3vw;
     font-size: 3vw;
     margin-left: 60px
 }
 
-.Gestion_De_Cursos input{
+.Gestion_De_Cursos input {
     background-image: url(./../../img/lupa.jpg);
     background-size: 20%;
     object-fit: cover;
@@ -153,23 +155,23 @@ body {
     text-align: center;
 }
 
-input::placeholder{
+input::placeholder {
     position: relative;
     top: .5vh;
     font-size: 1vw;
 }
 
-.Cursos, .Sub_cursos {
+.Cursos,
+.Sub_cursos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
     align-items: center;
-    padding: 1rem 0;
     margin-top: 3vw;
 }
 
 .Cursos {
-    font-size: 2rem;
+    font-size: 1.4vw;
     border-bottom: 2px solid #000000;
 }
 
@@ -178,47 +180,37 @@ input::placeholder{
     margin-top: 20px;
 }
 
-.Estado{
-    background-color: rgb(225, 241, 134);
+.Estado {
+    background-color: greenyellow;
     border-radius: 10rem;
     width: 8vw;
-    margin-left: 6vw;
+    justify-self: center;
     padding-bottom: 1vh;
     padding-top: 1vh;
 }
 
-.Estado1{
-    background-color:  rgb(225, 241, 134);
+.Estado1 {
+    justify-self: center;
+    background-color: rgb(145, 145, 145);
     border-radius: 10rem;
     padding-bottom: 1vh;
     width: 8vw;
-    margin-left: 6vw;
     padding-top: 1vh;
-}
-.Lecciones{
-    background-color:  #1e3a8a;
-    border-radius: 10rem;
-    padding-bottom: 1vh;
-    width: 8vw;
-    margin-left: 87vw;
-    padding-top: 1vh;
-    color: white;
-    text-align: center;
 }
 
-select{
+select {
     margin-left: 5%;
     background-color: #fff;
     border: none;
-    font-size: clamp(12px, 1.2vw, 5vw);
+    font-size: 2rem;
 }
 
-hr{
+hr {
     width: 100vw;
     min-width: 90vw;
 }
 
-.Sub_cursos img{
-    width: 80px;
-    height: 80px;
+.Sub_cursos img {
+    width: 50px;
+    height: 50px;
 }
