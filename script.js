@@ -26,11 +26,11 @@ async function entrar(){
     });
     if (usuariarito){
         localStorage.setItem('usuarito', JSON.stringify(usuariarito));
-        if(usuariarito.type === 'Estudiante'){
+        if(usuariarito.tipo === 'Estudiante'){
             window.location.href = '../../pages/estudiantes/panelE.html';
-        }else if (usuariarito.type === 'Docente'){
+        }else if (usuariarito.tipo === 'Docente'){
             window.location.href = './pages/docente/panelD.html';
-        }else if (usuariarito.type === 'Administrador'){
+        }else if (usuariarito.tipo === 'Administrador'){
             window.location.href = './pages/administrador/';
         }
     }else{
