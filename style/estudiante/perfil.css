@@ -10,7 +10,6 @@
 
 p {
     font-family: 'mayuscula';
-    margin-left: 60px;
     font-size: 30px;
 
 }
@@ -138,77 +137,105 @@ body {
 }
 
 
-.CuadroPerfil{
+.CuadroPerfil {
     display: block;
     margin-top: 5vh;
-    justify-content:center ;
-    height: 20vh;
+    justify-content: center;
+    height: fit-content;
     width: 70vw;
     background-color: rgb(228, 228, 228);
     margin-left: auto;
     margin-right: auto;
 }
 
-.CuadroPerfil img{
+.CuadroPerfil img {
     position: relative;
     left: 32vw;
     width: 5vw;
     min-width: 24px;
 }
 
-.text_perfil{
-    display:flex ;
+.text_perfil {
+    display: flex;
     gap: 4vw;
+    text-align: center;
     justify-content: center;
     font-family: 'letras';
-    font-size: 1.1vw;
-    margin-left: 90px;
+    font-size: 1.2vw;
 }
 
-.informacion_perfil{
-    display: flex;
+span {
+    display: block;
+}
+
+.Segundo_contenedor {
     justify-self: center;
-    justify-content: center;
+    height: min-content;
     background-color: rgb(228, 228, 228);
     width: 70vw;
-    height: 40vh;
+    padding-top: 1vh;
+    padding-left: 1vw;
+
 }
 
-.informacion_personal{
-    position: relative;
+.card {
     display: grid;
-    grid-template-rows: 1fr  1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-    font-size: 2vw;
-    padding: 1rem 0;
-    gap: 2vw;
-    text-align: right;
+    padding-top: 3vh;
 }
 
+.card p {
+    font-size: clamp(12px, 1vw, 30px);
+}
 
-.informacion_personal p{
+.card span {
     border: 1px solid;
-    padding: .6vw;
-    border-radius: 1vh;
-    font-size: 1vw;
+    padding: .7vw;
+    border-radius: .7rem;
+    width: clamp(12vw,2vw,4vw);
 }
 
-.Cursos_inscritos{
+.informacion_personal h1 {
+    font-size: 2vw;
+}
+
+.Cursos_inscritos {
+    padding-top: 6vh;
     position: relative;
     text-align: center;
 }
 
-.cursos_abajo{
+.cursos_abajo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 1rem 0;
+    padding: 1rem;
     justify-self: center;
-    gap: 5vw;
+    gap: 10vw;
 }
 
-.cursos_abajo span{
+.titulo_3 h1{
+    position: fixed;
+    padding-left: 14vw;
+    
+}
+
+.cursos_abajo span {
+    height: fit-content;
     border: 1px solid;
-    font-size: 1vw;
-    width: fit-content;
+    width: max-content;
+}
+
+.curso p {
+    position: relative;
+    float: right;
+}
+
+.first{
+    border: 1px solid;
+    border-radius: .8rem;
+}
+
+.second{
+    border: 1px solid;
+    border-radius: .8rem;
 }
