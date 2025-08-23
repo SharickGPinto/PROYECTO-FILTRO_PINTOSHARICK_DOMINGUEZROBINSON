@@ -3,11 +3,16 @@
     src: url(../../fonts/Inter/static/Inter_24pt-Light.ttf);
 }
 
+@font-face {
+    font-family: 'mayuscula';
+    src: url(../../fonts/Inter/static/Inter_28pt-SemiBold.ttf);
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    font-family: 'letras';
+    font-family: 'mayuscula';
 }
 
 body {
@@ -83,6 +88,7 @@ body {
     margin-right: auto;
 }
 
+
 .perfil {
     display: flex;
     align-items: end;
@@ -122,4 +128,78 @@ body {
     height: 100%;
     object-fit: contain;
     display: block;
+}
+
+.Titulo{
+    padding-left: 4vw;
+    padding-top: 2vh;
+}
+
+.cursos_asignados{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.curso{
+    display: flex;
+    justify-self: center;
+}
+
+.curso1{
+    justify-self: center;
+    text-align: center;
+}
+
+.ver{
+
+    margin-top: 1vw;
+}
+
+.config{
+    display: grid;
+    grid-template-columns:  2px 1fr;
+    align-items: center;
+    column-gap: 8px;
+    padding: 10px;
+}
+.iconcito{
+    width: 3vw;
+    height: 3vw;
+}
+
+.titulo{
+    position: relative;
+    left: 3vw;
+}
+
+.titulo p{
+    font-family: 'mayuscula';
+    font-size: clamp(12px,1.5vw,36px);
+}
+
+.Informacion{
+    margin-left: 1vw;
+    position: relative;
+}
+
+.Informacion1{
+    margin-left: 1vw;
+    position: relative;
+}
+
+.estado span{
+    background-color: rgb(140, 229, 173);
+    border-radius: .6rem;
+    padding: 0.2vw;
+    text-align: center;
+    width: 100px;
+}
+
+.Informacion1 .estado span{
+    background-color: rgb(145, 145, 145);
+    border-radius: .6rem;
+    padding: 0.2vw;
+    text-align: center;
+    width: 100px;
 }
