@@ -210,7 +210,7 @@ select{
     margin-left: 5%;
     background-color: #fff;
     border: none;
-    font-size: 2rem;
+    font-size: clamp(12px, 1.2vw, 5vw);
 }
 
 hr{

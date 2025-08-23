@@ -146,17 +146,17 @@ body {
     object-fit: cover;
     background-repeat: no-repeat;
     border-radius: 1rem;
-    padding: 2%;
-    width: 34%;
-    min-width: 25%;
+    height: 6vh;
+    width: 12vw;
+    min-width: 2vw;
+    min-height: 3vh;
     overflow: hidden;
 }
 
 input::placeholder{
     position: relative;
-    left: 20%;
-    top: .5vh;
-    font-size: 2vw;
+    text-align: center;
+    font-size: 1vw;
 }
 
 .Cursos, .Sub_cursos {
@@ -189,7 +189,7 @@ select{
     margin-left: 5%;
     background-color: #fff;
     border: none;
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 hr{

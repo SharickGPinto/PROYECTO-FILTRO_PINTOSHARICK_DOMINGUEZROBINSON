@@ -137,19 +137,19 @@ body {
 
 
 .contenedor {
-    width: 58vw;
+    width: fit-content;
     display: flex;
     padding: 6vw;
-    height: 35vw;
-    margin-left: 17vw;
+    height: fit-content;
+    justify-self: center;
 }
 
 
 .tarjeta {
-    width: 60vw;
+    width: 40vw;
     background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.76);
-    border-radius: 40px;
+    border: 2px solid gray;
+    border-radius: 45px;
     padding: clamp(16px, 2.5vw, 32px);
 }
 
@@ -176,6 +176,10 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.76);
     border-radius: 6px;
     margin-top: 2vw;
+}
+
+.fila input{
+    border-radius: 8px;
 }
 
 .etiqueta {
