@@ -2,14 +2,16 @@
     font-family: 'letras';
     src: url(../../fonts/Inter/static/Inter_24pt-Light.ttf);
 }
+
 @font-face {
     font-family: 'mayuscula';
     src: url(../../fonts/Inter/static/Inter_28pt-SemiBold.ttf);
 }
-p{
+
+p {
     font-family: 'mayuscula';
-    margin-left: 10px;
-    
+    font-size: 30px;
+
 }
 
 * {
@@ -92,6 +94,7 @@ body {
     margin-right: auto;
 }
 
+
 .perfil {
     display: flex;
     align-items: end;
@@ -133,90 +136,107 @@ body {
     display: block;
 }
 
-.Gestion_De_Cursos{
-    position: relative;
-    top: 3vw;
-    font-size: 3vw;
-    margin-left: 60px
+
+.CuadroPerfil {
+    display: block;
+    margin-top: 5vh;
+    justify-content: center;
+    height: fit-content;
+    width: 70vw;
+    background-color: rgb(228, 228, 228);
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.Gestion_De_Cursos input{
-    background-image: url(./../../img/lupa.jpg);
-    background-size: 20%;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    border-radius: 1rem;
-    padding: 2%;
-    width: 34%;
-    min-width: 25%;
-    overflow: hidden;
+.CuadroPerfil img {
+    position: relative;
+    left: 32vw;
+    width: 5vw;
+    min-width: 24px;
 }
 
-input::placeholder{
-    position: relative;
-    left: 20%;
-    top: .5vh;
+.text_perfil {
+    display: flex;
+    gap: 4vw;
+    text-align: center;
+    justify-content: center;
+    font-family: 'letras';
+    font-size: 1.2vw;
+}
+
+span {
+    display: block;
+}
+
+.Segundo_contenedor {
+    justify-self: center;
+    height: min-content;
+    background-color: rgb(228, 228, 228);
+    width: 70vw;
+    padding-top: 1vh;
+    padding-left: 1vw;
+
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 3vh;
+}
+
+.card p {
+    font-size: clamp(12px, 1vw, 30px);
+}
+
+.card span {
+    border: 1px solid;
+    padding: .7vw;
+    border-radius: .7rem;
+    width: clamp(12vw,2vw,4vw);
+}
+
+.informacion_personal h1 {
     font-size: 2vw;
 }
 
-.Cursos, .Sub_cursos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-    text-align: center;
-    align-items: center;
-    padding: 1rem 0;
-    margin-top: 3vw;
-    font-family: 'mayuscula';
-}
-
-.Cursos {
-    font-size: 2rem;
-    border-bottom: 2px solid #000000;
-    font-family: 'mayuscula';
-}
-
-.Sub_cursos {
-    border-bottom: 1px solid #000000;
-    margin-top: 20px;
-        font-family: 'mayuscula';
-}
-
-.Estado{
-    background-color: rgb(229, 255, 115);
-    border-radius: 10rem;
-    padding-bottom: 1vh;
-    padding-top: 1vh;
-    font-family: 'mayuscula';
-}
-
-.Estado1{
-    background-color: rgb(53, 240, 109);
-    border-radius: 10rem;
-    padding-bottom: 1vh;
-    padding-top: 1vh;
-    font-family: 'mayuscula';
-}
-
-select{
-    margin-left: 5%;
-    background-color: #fff;
-    border: none;
-    font-size: 2rem;
-
-}
-
-hr{
-    width: 100vw;
-    min-width: 90vw;
-
-}
-.titulo, .valor{
+.Cursos_inscritos {
+    padding-top: 6vh;
     position: relative;
-    font-size: 1.2vw;
-    left: 2vw;
-}
-a {
-  color: inherit;         
-  text-decoration: none;  
+    text-align: center;
 }
 
+.cursos_abajo {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    padding: 1rem;
+    justify-self: center;
+    gap: 10vw;
+}
+
+.titulo_3 h1{
+    position: fixed;
+    padding-left: 14vw;
+    
+}
+
+.cursos_abajo span {
+    height: fit-content;
+    border: 1px solid;
+    width: max-content;
+}
+
+
+.curso p {
+    position: relative;
+    float: right;
+}
+
+.first{
+    border: 1px solid;
+    border-radius: .8rem;
+}
+
+.second{
+    border: 1px solid;
+    border-radius: .8rem;
+}
