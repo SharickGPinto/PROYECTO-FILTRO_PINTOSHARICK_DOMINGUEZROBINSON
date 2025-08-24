@@ -228,19 +228,13 @@ input::placeholder {
 
 
 .Estado {
+    margin-left: 4vw;
+    justify-self: center;
+    width: 8vw;
     background-color: greenyellow;
     border-radius: 10rem;
     padding-bottom: 1vh;
     padding-top: 1vh;
-}
-
-
-
-select {
-    margin-left: 5%;
-    background-color: #fff;
-    border: none;
-    font-size: 2rem;
 }
 
 hr {
@@ -254,7 +248,9 @@ hr {
 }
 
 .progress_bar {
-    width: 15vw;
+    margin-left: 4vw;
+    justify-self: center;
+    width: 8vw;
     height: 40px;
     background-color: #24ff77;
     border-radius: 25px;
@@ -266,18 +262,23 @@ hr {
 }
 
 .progress_bar1 {
-    width: 15vw;
+    margin-left: 4vw;
+    justify-self: center;
+    width: 8vw;
     height: 40px;
     background-color: #24ff77;
     border-radius: 25px;
 }
 
-.progress_bar span{
+.progress_bar1 span{
     position: relative;
     top: 10px;
 }
 
 .Estado1 {
+    margin-left: 4vw;
+    justify-self: center;
+    width: 8vw;
     background-color: rgb(145, 145, 145);
     border-radius: 10rem;
     padding-bottom: 1vh;
@@ -287,4 +288,16 @@ hr {
 a {
   color: inherit;         
   text-decoration: none;  
+}
+
+.Tipo_Curso{
+    display: flex;
+    justify-content: center;
+}
+
+.Tipo_Curso p{
+    position: relative;
+    font-size: 1vw;
+    top: 3.6vh;
+    margin-left: 0;
 }
