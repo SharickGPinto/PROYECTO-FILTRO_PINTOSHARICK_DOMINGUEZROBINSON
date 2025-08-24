@@ -218,3 +218,8 @@ hr{
     padding-bottom: 1vh;
     padding-top: 1vh;
 }
+
+a {
+  color: inherit;         
+  text-decoration: none;  
+}

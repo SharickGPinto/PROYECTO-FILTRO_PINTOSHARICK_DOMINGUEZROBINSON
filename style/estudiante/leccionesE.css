@@ -329,3 +329,8 @@ input::placeholder {
 .div4 select{
     border: unset;
 }
+
+a {
+  color: inherit;         
+  text-decoration: none;  
+}
