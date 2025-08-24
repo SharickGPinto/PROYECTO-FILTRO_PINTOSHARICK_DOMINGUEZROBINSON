@@ -2,21 +2,23 @@
     font-family: 'letras';
     src: url(../../fonts/Inter/static/Inter_24pt-Light.ttf);
 }
+
 @font-face {
     font-family: 'mayuscula';
     src: url(../../fonts/Inter/static/Inter_28pt-SemiBold.ttf);
 }
-p{
+
+p {
     font-family: 'mayuscula';
     margin-left: 10px;
-    
+
 }
 
 * {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    font-family: 'letras';
+    font-family: 'mayuscula';
 }
 
 body {
@@ -133,90 +135,70 @@ body {
     display: block;
 }
 
-.Gestion_De_Cursos{
-    position: relative;
-    top: 3vw;
-    font-size: 3vw;
-    margin-left: 60px
+
+.contenedor {
+    width: fit-content;
+    display: flex;
+    justify-self: center;
+    padding: 2vw;
 }
 
-.Gestion_De_Cursos input{
-    background-image: url(./../../img/lupa.jpg);
-    background-size: 20%;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    border-radius: 1rem;
-    padding: 2%;
-    width: 34%;
-    min-width: 25%;
-    overflow: hidden;
+
+.tarjeta {
+    width: fit-content;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.76);
+    border-radius: 70px;
+    padding: clamp(16px, 2.5vw, 32px);
 }
 
-input::placeholder{
-    position: relative;
-    left: 20%;
-    top: .5vh;
-    font-size: 2vw;
-}
 
-.Cursos, .Sub_cursos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+.titulo {
+    font-size: clamp(14px, 1.2vw, 5vw);
+    color: #000000;
+    margin-bottom: clamp(14px, 1.6vw, 20px);
     text-align: center;
-    align-items: center;
-    padding: 1rem 0;
-    margin-top: 3vw;
-    font-family: 'mayuscula';
 }
 
-.Cursos {
-    font-size: 2rem;
-    border-bottom: 2px solid #000000;
-    font-family: 'mayuscula';
+.etiqueta {
+    color: #000000;
+    margin-bottom: 10px;
 }
 
-.Sub_cursos {
-    border-bottom: 1px solid #000000;
-    margin-top: 20px;
-        font-family: 'mayuscula';
+.entrada {
+    padding: 12px 14px;
+    border: 1px solid #D1D5DB;
+    border-radius: 16px;
+    background: #fff;
+    color: #00000067;
 }
 
-.Estado{
-    background-color: rgb(229, 255, 115);
-    border-radius: 10rem;
-    padding-bottom: 1vh;
-    padding-top: 1vh;
-    font-family: 'mayuscula';
-}
-
-.Estado1{
-    background-color: rgb(53, 240, 109);
-    border-radius: 10rem;
-    padding-bottom: 1vh;
-    padding-top: 1vh;
-    font-family: 'mayuscula';
-}
-
-select{
-    margin-left: 5%;
-    background-color: #fff;
+.entrada-select {
+    padding-top: 1vw;
     border: none;
-    font-size: 2rem;
-
+    background: transparent;
+    color: #000000;
 }
 
-hr{
-    width: 100vw;
-    min-width: 90vw;
-
-}
-.titulo, .valor{
-    position: relative;
-    font-size: 1.2vw;
-    left: 2vw;
-}
-a {
-  color: inherit;         
-  text-decoration: none;  
+.acciones {
+    margin-left: 20vw;
+    gap: 40px;
 }
 
+.btn {
+    padding: 10px 16px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.btn-secundario {
+    background: #fff;
+    color: #000000;
+    border-color: #000000;
+}
+
+.btn-primario {
+    background: #1e3a8a;
+    color: #fff;
+}

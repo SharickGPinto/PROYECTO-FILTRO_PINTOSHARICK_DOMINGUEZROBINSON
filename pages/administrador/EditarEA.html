@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style/administrador/EditarEA.css">
+</head>
+
+<body>
+    <header>
+        <div class="cabeza">
+            <div class="Lms">LMS</div>
+            <div class="panel">PANEL</div>
+            <div class="cursos">CURSOS</div>
+            <div class="asignaciones">ASIGNACIONES</div>
+            <div class="progreso">PROGRESO</div>
+            <div class="notificaciones"><img src="./../../img/notificacion.png" alt=""></div>
+            <div class="configuracion"><img src="./../../img/configuracion.png" alt=""></div>
+            <div class="perfil"><img src="./../../img/perfil.png" alt=""></div>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <div class="tarjeta">
+            <div class="titulo">ADMINISTRAR ESTUDIANTE</div>
+
+            <div class="fila">
+                <div class="etiqueta">Nombre Del Estudiante</div>
+                <input class="entrada" type="text" placeholder="Ingresar Nombre">
+            </div>
+
+            <br />
+            <div class="fila fila-doble">
+                <div class="columna">
+                    <div class="etiqueta">Correo Electronico</div>
+                    <input class="entrada" type="text">
+                </div>
+                <div class="columna">
+                    <div class="etiqueta">Asignatura</div>
+                    <select class="Asignatura_select">
+                        <option selected disabled>Asignatura</option>
+                        <option>Desarrollo</option>
+                        <option>Matematicas Avanzadas</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="fila">
+                <br>
+                <select class="entrada-select">
+                    <option selected disabled>Estado</option>
+                    <option>Pendiente</option>
+                    <option>En curso</option>
+                    <option>Finalizada</option>
+                </select>
+            </div>
+
+            <div class="acciones">
+                <button class="btn btn-secundario">Confirmar</button>
+                <button class="btn btn-primario">Confirmar</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
