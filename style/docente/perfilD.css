@@ -261,7 +261,105 @@ span {
     font-family:'mayuscula';
     top: 3vh
 }
+
 a {
   color: inherit;         
   text-decoration: none;  
+}
+
+.configuracion_content{
+    display: none;
+    color: #000;
+    position: fixed;
+    background-color: rgb(228, 228, 228);
+    width: 20vw;
+    height: fit-content;
+    border-radius: 0.6rem;
+    font-family: 'mayuscula';
+    margin-top: 28vh;
+    margin-right: 18vw;
+}
+
+.dropdown_content h2{
+    padding-top: .6vh;
+    padding-left: .8vw;
+}
+
+.Idioma{
+    display: flex;
+    color: #000;
+}
+
+.Idioma p{
+    font-size: 1.4vw;
+
+}
+
+.Opciones h1{
+    padding-left: 1vw;
+    padding-top: 1vh;
+}
+
+.Idioma select{
+    position: relative;
+    background: none;
+    left: 1vw;
+    border: none;
+    font-size: .8vw;
+}
+
+.Correo{
+    gap: .4vw;
+    padding-left: 1vw;
+    padding-top: 1vh;
+}
+
+.Correo input{
+    padding-top: .4vh;
+    padding-left: 1vw;
+    background-color: greenyellow;
+    border: none;
+}
+
+.CerrarSesion{
+    display: flex;
+    gap: .4vw;
+    padding-left: 1vw;
+}
+
+.CerrarSesion img{
+    width: 1vw;
+}
+
+.configuracion:hover .configuracion_content{
+    display: block;
+}
+
+.Notificacion_content{
+    position: fixed;
+    display: none;
+    color: #000;
+    width: 20vw;
+    height: 20vh;
+    font-family: 'mayuscula';
+    padding-top: 20vh;
+}
+
+.historial_notificaciones{
+    position: relative;
+    left: 1vw;
+}
+
+.Notificacion_content .dropdown_content{
+    background-color: rgb(228, 228, 228);
+    border-radius: 0.8rem;
+}
+
+.notificaciones .dropdown{
+    position: relative;
+}
+
+
+.notificaciones:hover .Notificacion_content{
+    display: inline-block;
 }
