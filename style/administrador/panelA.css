@@ -8,16 +8,6 @@
     src: url(../../fonts/Inter/static/Inter_28pt-SemiBold.ttf);
 }
 
-p {
-    font-family: 'mayuscula';
-    margin-left: 10px;
-
-}
-a {
-  color: inherit;         
-  text-decoration: none;  
-}
-
 * {
     margin: 0;
     box-sizing: border-box;
@@ -98,6 +88,7 @@ body {
     margin-right: auto;
 }
 
+
 .perfil {
     display: flex;
     align-items: end;
@@ -139,77 +130,53 @@ body {
     display: block;
 }
 
+.Titulo{
+    padding-left: 4vw;
+    padding-top: 2vh;
+}
 
-.contenedor {
-    width: fit-content;
-    display: flex;
+.cursos_asignados{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.curso{
     justify-self: center;
-    padding: 2vw;
 }
 
-
-.tarjeta {
-    width: fit-content;
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.76);
-    border-radius: 70px;
-    padding: clamp(16px, 2.5vw, 32px);
+.curso1{
+    justify-self: center;
+    text-align: center;
 }
 
+.ver{
 
-.titulo {
-    font-size: clamp(14px, 1.6vw, 5vw);
-    color: #000000;
-    margin-bottom: clamp(14px, 1.6vw, 20px);
+    margin-top: 1vw;
 }
 
-.etiqueta {
-    color: #000000;
-    margin-bottom: 10px;
+.config{
+    display: grid;
+    grid-template-columns:  2px 1fr;
+    align-items: center;
+    column-gap: 8px;
+    padding: 10px;
+}
+.iconcito{
+    width: 3vw;
+    height: 3vw;
 }
 
-.entrada {
-    padding: 12px 14px;
-    border: 1px solid #D1D5DB;
-    border-radius: 16px;
-    background: #fff;
-    color: #00000067;
+.titulo{
+    position: relative;
+    left: 3vw;
 }
 
-.entrada-select {
-    padding-top: 1vw;
-    border: none;
-    background: transparent;
-    color: #000000;
+.titulo p{
+    font-family: 'mayuscula';
+    font-size: clamp(12px,1.5vw,36px);
 }
-
-.Asignatura_select{
-    padding: 12px 18px;
-    border: 1px solid #D1D5DB;
-    border-radius: 16px;
-    background: #fff;
-    color: #00000067;
-}
-
-.acciones {
-    margin-left: 20vw;
-    gap: 40px;
-}
-
-.btn {
-    padding: 10px 16px;
-    border-radius: 15px;
-    border: 1px solid transparent;
-    cursor: pointer;
-}
-
-.btn-secundario {
-    background: #fff;
-    color: #000000;
-    border-color: #000000;
-}
-
-.btn-primario {
-    background: #1e3a8a;
-    color: #fff;
+a {
+  color: inherit;         
+  text-decoration: none;  
 }
