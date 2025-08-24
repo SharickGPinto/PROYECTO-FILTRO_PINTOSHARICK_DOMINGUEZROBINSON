@@ -10,7 +10,7 @@
 
 p {
     font-family: 'mayuscula';
-    margin-left: 60px;
+    margin-left: 5px;
     font-size: 30px;
 
 }
@@ -19,7 +19,7 @@ p {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    font-family: 'letras';
+    font-family: 'mayuscula';
 }
 
 body {
@@ -137,28 +137,99 @@ body {
     display: block;
 }
 
-.estadisticas {
+.contenedor1 {
     display: grid;
-    grid-template-columns: repeat(3, 320px);
-    gap: 40px;
-    justify-content: center;
-    height: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 15px;
+    height: 5px;
+    margin-left: 3vw;
 }
 
-.estadisticas img{
-    height: 6vh;
-    width: 3vw;
+.div2 {
+    grid-column-start: 1;
+    grid-row-start: 2
 }
 
-.card {
+.div3 {
+    height: 30px;
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+.div4 {
+    grid-column-start: 1;
+    grid-row-start: 4;
+}
+
+.div5 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.div6 {
+    grid-column: span 5 / span 5;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.div7 {
+    grid-column: span 5 / span 5;
+    grid-row-start: 4;
+}
+
+.Tipo {
+    background-color: #1e3a8a;
+    border-radius: .6rem;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    text-align: center;
+    width: 100px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.Estado {
+    background-color: #1e3a8a;
+    border-radius: .6rem;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    text-align: center;
+    width: 100px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.Descargar {
+    background-color: #1e3a8a;
+    border-radius: 10rem;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    text-align: center;
+    width: 100px;
+    color: white;
+}
+
+.Sub_cursos {
+    border-bottom: 1px solid #000000;
     display: grid;
-    grid-template-columns: 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
     align-items: center;
-    column-gap: 8px;
-    padding: 10px;
-    border: 1px solid #9c9c9c;
-    border-radius: 6px;
-    height: 6vw;
+    padding: 1rem 0;
+}
+
+.Sub_informacion {
+    border-bottom: 1px solid #000000;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.Sub_informacion img {
+    float: inline-start;
 }
 
 .icon {
@@ -204,94 +275,75 @@ body {
     font-size: 2vw;
 }
 
+.Gestion_De_Cursos input {
+    background-image: url(../../img/lupa.jpg);
+    background-size: 20vw;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
 input::placeholder {
     position: relative;
-    left: 20%;
-    top: .5vh;
-    font-size: 2vw;
-}
-
-.Cursos,
-.Sub_cursos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
+    font-size: 2vh;
+}
+
+.contenedor1 .Cursos input {
+    height: 4vh;
+    border-radius: .5rem;
+    background-image: url(../../img/lupa.jpg);
+    background-size: 2vw;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.div6 p {
+    font-size: 1.4rem;
+}
+
+.Cursos input{
+    width: 12vw;
+    text-align: center;
+}
+
+.Informacion {
+    display: flex;
+    gap: 2vw;
+}
+.links{
+    display: flex;
+    gap: 4vw; 
+    margin-left: 78vw;
     align-items: center;
-    padding: 1rem 0;
-    margin-top: 3vw;
 }
 
-.Cursos {
-    font-size: 2rem;
-    border-bottom: 2px solid #000000;
-}
-
-.Sub_cursos {
-    border-bottom: 1px solid #000000;
-    margin-top: 2px;
-}
-
-
-.Estado {
-    background-color: greenyellow;
-    border-radius: 10rem;
+.coso{
+    background-color: #1e3a8a;
+    border-radius: .6rem;
     padding-bottom: 1vh;
     padding-top: 1vh;
+    text-align: center;
+    color: white;
+    font-size: 1.3vw;   
 }
 
 
+.div2 select,
+.div3 select,
+.div4 select,
+.div5 input {
+    text-align: center;
+    width: 12vw;
+    height: 4vh;
+    border-radius: .5rem;
+    border: 2px solid gray;
 
-select {
-    margin-left: 5%;
-    background-color: #fff;
-    border: none;
-    font-size: 2rem;
 }
 
-hr {
-    width: 100vw;
-    min-width: 90vw;
+.div3 select,
+.div4 select{
+    border: unset;
 }
-
-.Sub_cursos img {
-    width: 5vw;
-    height: 5vw;
-}
-
-.progress_bar {
-    width: 15vw;
-    height: 40px;
-    background-color: #24ff77;
-    border-radius: 25px;
-}
-
-.progress_bar span{
-    position: relative;
-    top: 10px;
-}
-
-.progress_bar1 {
-    width: 15vw;
-    height: 40px;
-    background-color: #24ff77;
-    border-radius: 25px;
-}
-
-.progress_bar span{
-    position: relative;
-    top: 10px;
-}
-
-.Estado1 {
-    background-color: rgb(145, 145, 145);
-    border-radius: 10rem;
-    padding-bottom: 1vh;
-    padding-top: 1vh;
-}
-
-.titulo, .valor{
-    position: relative;
-    font-size: 1.2vw;
-    left: 2vw;
-}
-

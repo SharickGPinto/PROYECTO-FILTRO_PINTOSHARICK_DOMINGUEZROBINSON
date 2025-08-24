@@ -10,7 +10,8 @@
 
 p {
     font-family: 'mayuscula';
-    margin-left: 10px;
+    margin-left: 60px;
+    font-size: 30px;
 
 }
 
@@ -18,7 +19,7 @@ p {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    font-family: 'mayuscula';
+    font-family: 'letras';
 }
 
 body {
@@ -94,6 +95,7 @@ body {
     margin-right: auto;
 }
 
+
 .perfil {
     display: flex;
     align-items: end;
@@ -135,69 +137,144 @@ body {
     display: block;
 }
 
-
-.contenedor {
-    width: fit-content;
-    display: flex;
-    justify-self: center;
-    padding: 2vw;
-}
-
-
-.tarjeta {
-    width: fit-content;
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.76);
-    border-radius: 70px;
-    padding: clamp(16px, 2.5vw, 32px);
-}
-
-
-.titulo {
-    font-size: clamp(14px, 1.6vw, 5vw);
-    color: #000000;
-    margin-bottom: clamp(14px, 1.6vw, 20px);
-}
-
-.etiqueta {
-    color: #000000;
-    margin-bottom: 10px;
-}
-
-.entrada {
-    padding: 12px 14px;
-    border: 1px solid #D1D5DB;
-    border-radius: 16px;
-    background: #fff;
-    color: #00000067;
-}
-
-.entrada-select {
-    padding-top: 1vw;
-    border: none;
-    background: transparent;
-    color: #000000;
-}
-
-.acciones {
-    margin-left: 20vw;
+.estadisticas {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
     gap: 40px;
+    justify-content: center;
+    height: 20px;
 }
 
-.btn {
-    padding: 10px 16px;
-    border-radius: 15px;
-    border: 1px solid transparent;
-    cursor: pointer;
+.estadisticas img{
+    height: 6vh;
+    width: 3vw;
 }
 
-.btn-secundario {
-    background: #fff;
-    color: #000000;
-    border-color: #000000;
+.card {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    align-items: center;
+    column-gap: 8px;
+    padding: 10px;
+    border: 1px solid #9c9c9c;
+    border-radius: 6px;
+    height: 6vw;
 }
 
-.btn-primario {
-    background: #1e3a8a;
-    color: #fff;
+.icon {
+    height: 20px;
+    width: 20px;
+}
+
+.cursosI {
+    margin-top: 8vw;
+}
+
+.imagencita {
+    background-image: url(../../img/cursos.png);
+    position: absolute;
+    background-size: cover;
+    width: 20vw;
+    height: 13vw;
+    left: 10vw;
+    margin-top: 0.8vw;
+
+}
+
+.ver {
+    margin-top: 15vw;
+}
+
+.config {
+    display: grid;
+    grid-template-columns: 2px 1fr;
+    align-items: center;
+    column-gap: 8px;
+    padding: 10px;
+}
+
+.iconcito {
+    width: 3vw;
+    height: 3vw;
+}
+
+.Gestion_De_Cursos {
+    position: relative;
+    top: 3vw;
+    font-size: 2vw;
+}
+
+.Cursos,
+.Sub_cursos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    padding: 1rem 0;
+    margin-top: 3vw;
+}
+
+.Cursos {
+    font-size: 2rem;
+    border-bottom: 2px solid #000000;
+}
+
+.Sub_cursos {
+    border-bottom: 1px solid #000000;
+    margin-top: 2px;
+}
+
+
+.Estado {
+    background-color: greenyellow;
+    border-radius: 10rem;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+}
+
+hr {
+    width: 100vw;
+    min-width: 90vw;
+}
+
+.Sub_cursos img {
+    width: 3vw;
+    height: 3%;
+}
+
+.progress_bar {
+    width: 15vw;
+    height: 40px;
+    background-color: #24ff77;
+    border-radius: 25px;
+}
+
+.progress_bar span{
+    position: relative;
+    top: 10px;
+}
+
+.progress_bar1 {
+    width: 15vw;
+    height: 40px;
+    background-color: #24ff77;
+    border-radius: 25px;
+}
+
+.progress_bar span{
+    position: relative;
+    top: 10px;
+}
+
+.Estado1 {
+    background-color: rgb(145, 145, 145);
+    border-radius: 10rem;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+}
+
+.titulo, .valor{
+    position: relative;
+    font-size: 1.2vw;
+    left: 2vw;
 }

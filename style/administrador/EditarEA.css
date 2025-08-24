@@ -179,6 +179,14 @@ body {
     color: #000000;
 }
 
+.Asignatura_select{
+    padding: 12px 18px;
+    border: 1px solid #D1D5DB;
+    border-radius: 16px;
+    background: #fff;
+    color: #00000067;
+}
+
 .acciones {
     margin-left: 20vw;
     gap: 40px;

@@ -10,7 +10,7 @@
 
 p {
     font-family: 'mayuscula';
-    margin-left: 10px;
+    font-size: 30px;
 
 }
 
@@ -18,7 +18,7 @@ p {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    font-family: 'mayuscula';
+    font-family: 'letras';
 }
 
 body {
@@ -94,6 +94,7 @@ body {
     margin-right: auto;
 }
 
+
 .perfil {
     display: flex;
     align-items: end;
@@ -136,68 +137,106 @@ body {
 }
 
 
-.contenedor {
-    width: fit-content;
+.CuadroPerfil {
+    display: block;
+    margin-top: 5vh;
+    justify-content: center;
+    height: fit-content;
+    width: 70vw;
+    background-color: rgb(228, 228, 228);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.CuadroPerfil img {
+    position: relative;
+    left: 32vw;
+    width: 5vw;
+    min-width: 24px;
+}
+
+.text_perfil {
     display: flex;
+    gap: 4vw;
+    text-align: center;
+    justify-content: center;
+    font-family: 'letras';
+    font-size: 1.2vw;
+}
+
+span {
+    display: block;
+}
+
+.Segundo_contenedor {
     justify-self: center;
-    padding: 2vw;
+    height: min-content;
+    background-color: rgb(228, 228, 228);
+    width: 70vw;
+    padding-top: 1vh;
+    padding-left: 1vw;
+
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 3vh;
+}
+
+.card p {
+    font-size: clamp(12px, 1vw, 30px);
+}
+
+.card span {
+    border: 1px solid;
+    padding: .7vw;
+    border-radius: .7rem;
+    width: clamp(12vw,2vw,4vw);
+}
+
+.informacion_personal h1 {
+    font-size: 2vw;
+}
+
+.Cursos_inscritos {
+    padding-top: 6vh;
+    position: relative;
+    text-align: center;
+}
+
+.cursos_abajo {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    padding: 1rem;
+    justify-self: center;
+    gap: 10vw;
+}
+
+.titulo_3 h1{
+    position: fixed;
+    padding-left: 14vw;
+    
+}
+
+.cursos_abajo span {
+    height: fit-content;
+    border: 1px solid;
+    width: max-content;
 }
 
 
-.tarjeta {
-    width: fit-content;
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.76);
-    border-radius: 70px;
-    padding: clamp(16px, 2.5vw, 32px);
+.curso p {
+    position: relative;
+    float: right;
 }
 
-
-.titulo {
-    font-size: clamp(14px, 1.6vw, 5vw);
-    color: #000000;
-    margin-bottom: clamp(14px, 1.6vw, 20px);
+.first{
+    border: 1px solid;
+    border-radius: .8rem;
 }
 
-.etiqueta {
-    color: #000000;
-    margin-bottom: 10px;
-}
-
-.entrada {
-    padding: 12px 14px;
-    border: 1px solid #D1D5DB;
-    border-radius: 16px;
-    background: #fff;
-    color: #00000067;
-}
-
-.entrada-select {
-    padding-top: 1vw;
-    border: none;
-    background: transparent;
-    color: #000000;
-}
-
-.acciones {
-    margin-left: 20vw;
-    gap: 40px;
-}
-
-.btn {
-    padding: 10px 16px;
-    border-radius: 15px;
-    border: 1px solid transparent;
-    cursor: pointer;
-}
-
-.btn-secundario {
-    background: #fff;
-    color: #000000;
-    border-color: #000000;
-}
-
-.btn-primario {
-    background: #1e3a8a;
-    color: #fff;
+.second{
+    border: 1px solid;
+    border-radius: .8rem;
 }
