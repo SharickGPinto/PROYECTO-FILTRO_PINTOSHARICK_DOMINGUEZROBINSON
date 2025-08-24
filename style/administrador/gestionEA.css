@@ -2,23 +2,21 @@
     font-family: 'letras';
     src: url(../../fonts/Inter/static/Inter_24pt-Light.ttf);
 }
-
 @font-face {
     font-family: 'mayuscula';
     src: url(../../fonts/Inter/static/Inter_28pt-SemiBold.ttf);
 }
-
-p {
+p{
     font-family: 'mayuscula';
-    font-size: 30px;
-
+    margin-left: 10px;
+    
 }
 
 * {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    font-family: 'letras';
+    font-family: 'mayuscula';
 }
 
 body {
@@ -94,7 +92,6 @@ body {
     margin-right: auto;
 }
 
-
 .perfil {
     display: flex;
     align-items: end;
@@ -136,128 +133,127 @@ body {
     display: block;
 }
 
-
-.CuadroPerfil {
-    display: block;
-    margin-top: 5vh;
-    justify-content: center;
-    height: fit-content;
-    width: 70vw;
-    background-color: rgb(228, 228, 228);
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.CuadroPerfil img {
-    position: relative;
-    left: 32vw;
-    width: 5vw;
-    min-width: 24px;
-}
-
-.text_perfil {
+.Gestion_De_Cursos{
     display: flex;
-    gap: 4vw;
-    text-align: center;
-    justify-content: center;
-    font-family: 'letras';
-    font-size: 1.2vw;
-}
-
-span {
-    display: block;
-}
-
-.Segundo_contenedor {
-    justify-self: center;
-    height: min-content;
-    background-color: rgb(228, 228, 228);
-    width: 70vw;
-    padding-top: 1vh;
-    padding-left: 1vw;
-
-}
-
-.card {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 3vh;
-}
-
-.card p {
-    font-size: clamp(12px, 1vw, 30px);
-}
-
-.card span {
-    border: 1px solid;
-    padding: .7vw;
-    border-radius: .7rem;
-    width: clamp(12vw,2vw,4vw);
-}
-
-.informacion_personal h1 {
+    position: relative;
+    top: 3vw;
     font-size: 2vw;
+    margin-left: 60px;
 }
 
-.Cursos_inscritos {
-    padding-top: 6vh;
+.Busqueda{
     position: relative;
+    margin-top: 4vh;
+    font-size: 2vw;
+    margin-left: 60px
+}
+
+.Busqueda input{
+    background-image: url(./../../img/lupa.jpg);
+    background-size: 20%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    height: 5vh;
+    width: 12vw;
+    min-width: 6vw;
+    overflow: hidden;
     text-align: center;
 }
 
-.cursos_abajo {
+input::placeholder{
+    position: relative;
+    font-size: 1vw;
+}
+
+.Cursos, .Sub_cursos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    text-align: center;
+    align-items: center;
+    margin-top: 1vw;
+}
+
+.Cursos {
+    font-size: 1.5vw;
+    border-bottom: 2px solid #000000;
+}
+
+.Sub_cursos {
+    border-bottom: 1px solid #000000;
+    margin-top: 20px;
+}
+
+.Estado{
+    background-color: rgb(225, 241, 134);
+    border-radius: 10rem;
+    width: 8vw;
     justify-self: center;
-    gap: 10vw;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
 }
 
-.titulo_3 h1{
-    position: relative;
-    padding-left: 14vw;
-    
+.Estado1{
+    background-color:  rgb(225, 241, 134);
+    border-radius: 10rem;
+    padding-bottom: 1vh;
+    width: 8vw;
+    justify-self: center;
+    padding-top: 1vh;
+}
+.Añadir{
+    background-image: url(../../img/agregarblanc.webp);
+    background-size: 1.2vw;
+    background-repeat: no-repeat;
+    background-position: 10%;
+    font-size: .8vw;
+    background-color:  #1e3a8a;
+    border-radius: 1rem;
+    width: 10vw;
+    padding-top: 1.3vh;
+    color: white;
+    text-align: end;
 }
 
-.cursos_abajo span {
-    height: fit-content;
-    border: 1px solid;
-    width: max-content;
-}
-
-.curso p {
-    position: relative;
-    float: right;
-}
-
-.first{
-    overflow: hidden;
-    width: fit-content;
+.Opciones{
     display: flex;
-    border: 1px solid;
-    border-radius: .8rem;
-    font-size: 1vw;
-    
+    margin-right: 4vw;
+    margin-left: auto;
+    gap: 1vw;
 }
 
-.first div{
+.Añadir a{
     position: relative;
-    top: 3vh;
-    font-family:'mayuscula';
+    color: white;
+    text-decoration: none;
+    right: .6vw;
 }
 
-.second{
-    overflow: hidden;
-    width: fit-content;
-    display: flex;
-    border: 1px solid;
-    border-radius: .8rem;
-    font-size: 1vw;
-    
+select{
+    margin-left: 5%;
+    background-color: #fff;
+    border: none;
+    font-size: clamp(12px, 1.2vw, 5vw);
 }
 
-.second div{
+hr{
+    width: 100vw;
+    min-width: 90vw;
+}
+
+.Sub_cursos img{
+    width: 40px;
+    height: 40px;
+}
+
+.progress_bar {
+    width: 15vw;
+    height: 40px;
+    background-color: #24ff77;
+    border-radius: 25px;
+}
+
+.valor{
     position: relative;
-    font-family:'mayuscula';
-    top: 3vh
+    top: 1vh;
 }
