@@ -191,3 +191,8 @@ body {
     width: 3vw;
     height: 3vw;
 }
+
+a {
+  color: inherit;         
+  text-decoration: none;  
+}

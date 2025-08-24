@@ -16,7 +16,7 @@ p{
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    font-family: 'mayuscula';
+    font-family: 'letras';
 }
 
 body {
@@ -167,16 +167,20 @@ input::placeholder{
     align-items: center;
     padding: 1rem;
     margin-top: 3vw;
+    
+
 }
 
 .Cursos {
     font-size: 2rem;
     border-bottom: 2px solid #000000;
+
 }
 
 .Sub_cursos {
     border-bottom: 1px solid #000000;
     margin-top: 20px;
+    font-family: 'mayuscula';
 }
 
 .Estado{
@@ -186,6 +190,7 @@ input::placeholder{
     padding-top: 1vh;
     width: 9vw;
     margin-left: 6vw;
+    font-family: 'mayuscula';
 }
 
 .Estado1{
@@ -195,6 +200,7 @@ input::placeholder{
     padding-top: 1vh;
     width: 9vw;
     margin-left: 6vw;
+    font-family: 'mayuscula';
 }
 
 select{
@@ -202,6 +208,7 @@ select{
     background-color: #fff;
     border: none;
     font-size: 1.2vw;
+    
 }
 
 hr{
@@ -212,4 +219,10 @@ hr{
 .Sub_cursos img{
     width: 80px;
     height: 80px;
+
+}
+
+a {
+  color: inherit;         
+  text-decoration: none;  
 }

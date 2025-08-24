@@ -27,7 +27,7 @@ async function entrar(){
     if (usuariarito){
         localStorage.setItem('usuarito', JSON.stringify(usuariarito));
         if(usuariarito.tipo === 'Estudiante'){
-            window.location.href = '../../pages/estudiantes/panelE.html';
+            window.location.href = './pages/estudiante/panelE.html';
         }else if (usuariarito.tipo === 'Docente'){
             window.location.href = './pages/docente/panelD.html';
         }else if (usuariarito.tipo === 'Administrador'){
