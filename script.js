@@ -31,7 +31,7 @@ async function entrar(){
         }else if (usuariarito.tipo === 'Docente'){
             window.location.href = './pages/docente/panelD.html';
         }else if (usuariarito.tipo === 'Administrador'){
-            window.location.href = './pages/administrador/';
+            window.location.href = './pages/administrador/panelA.html';
         }
     }else{
         alert("Usuario o contraseña incorrecta")
