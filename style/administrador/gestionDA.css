@@ -212,20 +212,18 @@ input::placeholder{
 }
 
 .Conducta{
+    justify-self: center;
+    width: 8vw;
     background-color: rgb(0, 249, 83);
     border-radius: 10rem;
     padding-bottom: 1vh;
     padding-top: 1vh;
 }
 
-.Conducta1{
-    background-color: rgb(0, 249, 83);
-    border-radius: 10rem;
-    padding-bottom: 1vh;
-    padding-top: 1vh;
-}
-
+    
 .Estado{
+    justify-self: center;
+    width: 8vw;
     background-color: rgb(0, 249, 83);
     border-radius: 10rem;
     padding-bottom: 1vh;

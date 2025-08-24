@@ -196,13 +196,6 @@ input::placeholder{
     padding-top: 1vh;
 }
 
-select{
-    margin-left: 5%;
-    background-color: #fff;
-    border: none;
-    font-size: 2rem;
-}
-
 hr{
     width: 100vw;
     min-width: 90vw;
@@ -212,7 +205,20 @@ hr{
     width: 80px;
     height: 80px;
 }
+
 a {
   color: inherit;         
   text-decoration: none;  
+}
+
+.Tipo_Curso{
+    display: flex;
+    justify-content: center;
+}
+
+.Tipo_Curso p{
+    position: relative;
+    font-size: 1vw;
+    top: 3vh;
+    margin-left: 0;
 }
