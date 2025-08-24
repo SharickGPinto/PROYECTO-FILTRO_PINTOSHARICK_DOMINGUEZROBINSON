@@ -2,19 +2,22 @@
     font-family: 'letras';
     src: url(../../fonts/Inter/static/Inter_24pt-Light.ttf);
 }
+
 @font-face {
     font-family: 'mayuscula';
     src: url(../../fonts/Inter/static/Inter_28pt-SemiBold.ttf);
 }
-p{
+
+p {
     font-family: 'mayuscula';
     margin-left: 10px;
-    
+
 }
 a {
   color: inherit;         
   text-decoration: none;  
 }
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -136,111 +139,63 @@ body {
     display: block;
 }
 
-.Gestion_De_Cursos{
-    position: relative;
-    top: 3vw;
-    font-size: 3vw;
-    margin-left: 60px
+
+.contenedor {
+    width: fit-content;
+    display: flex;
+    justify-self: center;
+    padding: 2vw;
 }
 
-.Gestion_De_Cursos input{
-    background-image: url(./../../img/lupa.jpg);
-    background-size: 20%;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    border-radius: 1rem;
-    height: 6vh;
-    width: 12vw;
-    min-width: 2vw;
-    min-height: 3vh;
-    overflow: hidden;
+
+.tarjeta {
+    width: fit-content;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.76);
+    border-radius: 70px;
+    padding: clamp(16px, 2.5vw, 32px);
 }
 
-input::placeholder{
-    position: relative;
+
+.titulo {
+    font-size: clamp(14px, 1.2vw, 5vw);
+    color: #000000;
+    margin-bottom: clamp(14px, 1.6vw, 20px);
     text-align: center;
+}
+
+
+.Seguro{
+    text-align: center;
+    padding-top: 5vh;
     font-size: 1vw;
 }
 
-.Cursos, .Sub_cursos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-    text-align: center;
-    align-items: center;
-    padding: 1rem 0;
-    margin-top: 3vw;
+.acciones {
+    display: flex;
+    padding-top: 8vh;
+    justify-content: center;
+    gap: 80px;
 }
 
-.Cursos {
-    font-size: 2vw;
-    border-bottom: 2px solid #000000;
+.btn {
+    padding: 30px 46px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    cursor: pointer;
 }
 
-.Sub_cursos {
-    border-bottom: 1px solid #000000;
-    margin-top: 20px;
+.btn-secundario {
+    background: #fff;
+    color: #000000;
+    border-color: #000000;
 }
 
-.Estado{
-    background-color: rgb(229, 255, 115);
-    border-radius: 10rem;
-    padding-bottom: 1vh;
-    padding-top: 1vh;
-}
-
-select{
-    margin-left: 5%;
-    background-color: #fff;
-    border: none;
-    font-size: 1.2rem;
-}
-
-hr{
-    width: 100vw;
-    min-width: 90vw;
-}
-
-.Enviar button{
-    background-color: unset;
-    border: none;
+.btn-primario {
+    background: #1e3a8a;
     color: #fff;
-    cursor: pointer;
 }
 
-.Enviar{
-    background-color: rgb(30, 58, 138);
-    border-radius: 10rem;
-    padding-bottom: 1vh;
-    padding-top: 1vh;
-    cursor: pointer;
-}
-
-.Estado1{
-    background-color: rgb(140, 229, 173);
-    border-radius: 10rem;
-    padding-bottom: 1vh;
-    padding-top: 1vh;
-}
-
-.nueva{
-    background-image: url(../../img/agregarblanc.webp);
-    background-size: 1vw;
-    background-repeat: no-repeat;
-    background-position: 10%;
-    background-color:  #1e3a8a;
-    border-radius: 10rem;
-    padding-bottom: 1vh;
-    width: 10vw;
-    margin-left: 87vw;
-    padding-top: 1vh;
-    color: white;
-    text-align: center;
-}
-
-.nueva a{
-    position: relative;
-    left: .4vw;
-}
 
 .configuracion_content{
     display: none;
