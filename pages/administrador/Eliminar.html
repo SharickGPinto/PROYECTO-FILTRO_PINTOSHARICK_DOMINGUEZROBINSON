@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../style/estudiante/gestionCE.css">
+    <link rel="stylesheet" href="../../style/administrador/Eliminar.css">
 </head>
+
 <body>
     <header>
         <div class="cabeza">
             <div class="Lms">LMS</div>
             <div class="panel">
-                <a href="../estudiante/panelE.html">PANEL</a></div>
-            <div class="cursos"><a href="../estudiante/gestionCE.html">CURSOS</a></div>
-            <div class="asignaciones"> <a href="../estudiante/Gestion_Asignaciones.html">ASIGNACIONES</a></div>
-            <div class="progreso"><a href="../estudiante/progresoE.html">PROGRESO</a></div>
+                <a href="../administrador/panelA.html">PANEL</a></div>
+            <div class="cursos"><a href="../administrador/gestionCA.html">CURSOS</a></div>
+            <div class="asignaciones"> <a href="../administrador/gestionAA.html">ASIGNACIONES</a></div>
+            <div class="progreso"><a href="../administrador/progresoA.html">PROGRESO</a></div>
             <div class="notificaciones"><img src="./../../img/notificacion.png" alt="">
             <div class="Notificacion_content">
 
@@ -78,47 +80,23 @@
                     </div>
                 </div>
             </div>
-            <div class="perfil"><a href="../estudiante/perfil.html"><img src="./../../img/perfil.png" alt=""></a></div>
+            <div class="perfil"><a href="../administrador/perfilA.html"><img src="./../../img/perfil.png" alt=""></a></div>
         </div>
     </header>
-    <div class="Gestion_De_Cursos">
-        <p>GESTION DE CURSOS</p>
-        <br />
-        <input type="text" name="busqueda" id="busqueda_cursos" placeholder="Buscar cursos...">
-        <select name="select" id="Estado">
-            <option value="">Estado</option>
-            <option value="">Pendiente</option>
-            <option value="">En revision</option>
-            <option value="">Calificado</option>
-        </select>
-    </div>
 
-    <div class="Cursos">
-        <p>Cursos</p>
-        <p>Categoria</p>
-        <p>Docente</p>
-        <p>Duracion</p>
-        <p>Estado</p>
-    </div>
+    <main class="contenedor">
+        <div class="tarjeta">
+            <div class="titulo">Eliminar Tarea/Evaluacion</div>
 
-    <div class="Sub_cursos">
-        <span> <img src="../../img/pc.png" alt="">Curso de desarrollo</span>
-        <span>Desarrollo</span>
-        <span>Laura Jimenez</span>
-        <span>10 Semanas</span>
-        <span>
-            <div class="Estado">Activo</div>
-        </span>
-    </div>
-    <div class="Sub_cursos">
-        <div class="curso"><img src="../../img/matec.png" alt="">Curso de desarrollo</div> 
-        <span>Matematicas Avanzadas</span>
-        <span>Antonio Martinez</span>
-        <span>12 Semanas</span>
-        <span>
-            <div class="Estado1">Inactivo</div>
-        </span>
-    </div>
-    
+            <div class="Seguro"><strong>Seguro que Quieres Eliminar?</strong></div>
+
+
+            <div class="acciones">
+                <button class="btn btn-secundario">Confirmar</button>
+                <button class="btn btn-primario">Confirmar</button>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
