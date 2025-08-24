@@ -159,6 +159,11 @@ body {
     margin-bottom: clamp(14px, 1.6vw, 20px);
 }
 
+.fila-doble {
+    display: flex;
+    gap: 10px;
+}
+
 .etiqueta {
     color: #000000;
     margin-bottom: 10px;

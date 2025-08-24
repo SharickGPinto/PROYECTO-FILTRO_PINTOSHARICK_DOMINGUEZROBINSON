@@ -159,6 +159,11 @@ body {
     margin-bottom: clamp(14px, 1.6vw, 20px);
 }
 
+.fila-doble {
+    display: flex;
+    gap: 10px;
+}
+
 .etiqueta {
     color: #000000;
     margin-bottom: 10px;
@@ -189,6 +194,14 @@ body {
     border-radius: 15px;
     border: 1px solid transparent;
     cursor: pointer;
+}
+
+.Duracion{
+    padding: 12px 14px;
+    border: 1px solid #D1D5DB;
+    border-radius: 16px;
+    background: #fff;
+    color: #00000067;
 }
 
 .btn-secundario {

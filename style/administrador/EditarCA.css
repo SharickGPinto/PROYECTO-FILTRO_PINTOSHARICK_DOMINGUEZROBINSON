@@ -164,6 +164,11 @@ body {
     margin-bottom: 10px;
 }
 
+.Seleciones{
+    display: flex;
+    gap: 3vw;
+}
+
 .entrada {
     padding: 12px 14px;
     border: 1px solid #D1D5DB;

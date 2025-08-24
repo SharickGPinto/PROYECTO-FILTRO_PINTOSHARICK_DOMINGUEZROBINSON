@@ -154,9 +154,10 @@ body {
 
 
 .titulo {
-    font-size: clamp(14px, 1.6vw, 5vw);
+    font-size: clamp(14px, 1.2vw, 5vw);
     color: #000000;
     margin-bottom: clamp(14px, 1.6vw, 20px);
+    text-align: center;
 }
 
 .etiqueta {

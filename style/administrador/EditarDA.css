@@ -172,13 +172,6 @@ body {
     color: #00000067;
 }
 
-.entrada-select {
-    padding-top: 1vw;
-    border: none;
-    background: transparent;
-    color: #000000;
-}
-
 .acciones {
     margin-left: 20vw;
     gap: 40px;
