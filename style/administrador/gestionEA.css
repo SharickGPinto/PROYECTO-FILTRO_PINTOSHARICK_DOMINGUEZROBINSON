@@ -1,0 +1,259 @@
+@font-face {
+    font-family: 'letras';
+    src: url(../../fonts/Inter/static/Inter_24pt-Light.ttf);
+}
+@font-face {
+    font-family: 'mayuscula';
+    src: url(../../fonts/Inter/static/Inter_28pt-SemiBold.ttf);
+}
+p{
+    font-family: 'mayuscula';
+    margin-left: 10px;
+    
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'mayuscula';
+}
+
+body {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    position: absolute;
+    background-size: cover;
+    margin-left: 1vw;
+    margin-top: max(56px, 4vw);
+}
+
+.cabeza {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4vw;
+    min-height: 56px;
+    padding: 1vw 3vw;
+    background: #1e3a8a;
+    color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1vw;
+}
+
+.Lms {
+    font-weight: 800;
+    letter-spacing: .5px;
+}
+
+.panel,
+.cursos,
+.asignaciones,
+.progreso {
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 2vw;
+    position: relative;
+    padding: .2rem 0;
+}
+
+.panel:hover::after,
+.cursos:hover::after,
+.asignaciones:hover::after,
+.progreso:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 2px;
+    background: #fff;
+}
+
+.panel,
+.cursos,
+.asignaciones,
+.progreso {
+    display: inline-block;
+}
+
+.cabeza>.panel {
+    margin-left: auto;
+}
+
+.cabeza>.progreso {
+    margin-right: auto;
+}
+
+.perfil {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    cursor: pointer;
+    width: 3vw;
+    height: 3vw;
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.notificaciones {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    cursor: pointer;
+    width: 3vw;
+    height: 3vw;
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.configuracion {
+    margin-top: 0.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 4vw;
+    height: 4vw;
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.cabeza img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.Gestion_De_Cursos{
+    display: flex;
+    position: relative;
+    top: 3vw;
+    font-size: 2vw;
+    margin-left: 60px;
+}
+
+.Busqueda{
+    position: relative;
+    margin-top: 4vh;
+    font-size: 2vw;
+    margin-left: 60px
+}
+
+.Busqueda input{
+    background-image: url(./../../img/lupa.jpg);
+    background-size: 20%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    height: 5vh;
+    width: 12vw;
+    min-width: 6vw;
+    overflow: hidden;
+    text-align: center;
+}
+
+input::placeholder{
+    position: relative;
+    font-size: 1vw;
+}
+
+.Cursos, .Sub_cursos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    text-align: center;
+    align-items: center;
+    margin-top: 1vw;
+}
+
+.Cursos {
+    font-size: 1.5vw;
+    border-bottom: 2px solid #000000;
+}
+
+.Sub_cursos {
+    border-bottom: 1px solid #000000;
+    margin-top: 20px;
+}
+
+.Estado{
+    background-color: rgb(225, 241, 134);
+    border-radius: 10rem;
+    width: 8vw;
+    justify-self: center;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+}
+
+.Estado1{
+    background-color:  rgb(225, 241, 134);
+    border-radius: 10rem;
+    padding-bottom: 1vh;
+    width: 8vw;
+    justify-self: center;
+    padding-top: 1vh;
+}
+.Añadir{
+    background-image: url(../../img/agregarblanc.webp);
+    background-size: 1.2vw;
+    background-repeat: no-repeat;
+    background-position: 10%;
+    font-size: .8vw;
+    background-color:  #1e3a8a;
+    border-radius: 1rem;
+    width: 10vw;
+    padding-top: 1.3vh;
+    color: white;
+    text-align: end;
+}
+
+.Opciones{
+    display: flex;
+    margin-right: 4vw;
+    margin-left: auto;
+    gap: 1vw;
+}
+
+.Añadir a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    right: .6vw;
+}
+
+select{
+    margin-left: 5%;
+    background-color: #fff;
+    border: none;
+    font-size: clamp(12px, 1.2vw, 5vw);
+}
+
+hr{
+    width: 100vw;
+    min-width: 90vw;
+}
+
+.Sub_cursos img{
+    width: 40px;
+    height: 40px;
+}
+
+.progress_bar {
+    width: 15vw;
+    height: 40px;
+    background-color: #24ff77;
+    border-radius: 25px;
+}
+
+.valor{
+    position: relative;
+    top: 1vh;
+}
