@@ -316,18 +316,39 @@ input::placeholder {
 .links{
     display: flex;
     gap: 4vw; 
-    margin-left: 78vw;
+    justify-content: end;
+    margin-right: 5vw;
     align-items: center;
 }
 
 .coso{
+    background-image: url(../../img/agregarblanc.webp);
+    background-size: 1.5vw;
+    background-repeat: no-repeat;
+    background-position: 10%;
     background-color: #1e3a8a;
     border-radius: .6rem;
     padding-bottom: 1vh;
-    padding-top: 1vh;
-    text-align: center;
-    color: white;
-    font-size: 1.3vw;   
+    padding-top: 1vh; 
+    width: 10vw; 
+}
+
+.Nueva_Tarea{
+    
+    display: flex;
+    justify-self: end;
+    margin-right: 2vw;
+    text-decoration: none;
+    color: #fff;
+    width: fit-content;
+}
+
+.Subir_Contenido{
+    display: flex;
+    justify-self: end;
+    margin-right: 1vw;
+    text-decoration: none;
+    color: #fff
 }
 
 
