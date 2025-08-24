@@ -261,3 +261,7 @@ span {
     font-family:'mayuscula';
     top: 3vh
 }
+a {
+  color: inherit;         
+  text-decoration: none;  
+}
