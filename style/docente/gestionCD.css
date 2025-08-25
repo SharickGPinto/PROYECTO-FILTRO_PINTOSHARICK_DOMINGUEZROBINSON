@@ -218,9 +218,8 @@ a {
 
 .Tipo_Curso p{
     position: relative;
+    top: 1vw;
     font-size: 1vw;
-    top: 3vh;
-    margin-left: 0;
 }
 
 .configuracion_content{

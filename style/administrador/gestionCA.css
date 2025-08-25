@@ -230,6 +230,44 @@ hr {
     top: 1vh;
 }
 
+.Cantidad{
+    position: fixed;
+    justify-self: end;
+    margin-right: 18vw;
+    margin-bottom: 4vw;
+}
+
+.porcentaje{
+    display: grid;
+    margin-left: 4vw;
+}
+
+.circulo {
+    fill: none;
+    stroke: greenyellow;
+    stroke-width: .5vw;
+    stroke-dasharray: 45;
+    stroke-dashoffset: 20;
+    stroke-linecap: round;
+    animation: rellenar 1.5s ease-in-out forwards;
+}
+
+.circulo1 {
+    fill: none;
+    stroke: red;
+    stroke-width: .5vw;
+    stroke-dasharray:115;
+    stroke-dashoffset: 30;
+    stroke-linecap: round;
+    animation: rellenar 1.5s ease-in-out forwards;
+}
+
+@keyframes rellenar {
+    to {
+        stroke-dashoffset: 88;
+    }
+}
+
 .configuracion_content{
     display: none;
     color: #000;
