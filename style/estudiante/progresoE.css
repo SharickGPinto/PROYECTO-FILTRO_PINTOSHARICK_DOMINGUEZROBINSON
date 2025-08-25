@@ -309,6 +309,11 @@ hr {
     top: 10px;
 }
 
+.progress_bar1 span {
+    position: relative;
+    top: 10px;
+}
+
 .Estado1 {
     background-color: rgb(145, 145, 145);
     border-radius: 10rem;
