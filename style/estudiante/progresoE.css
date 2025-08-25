@@ -145,7 +145,7 @@ body {
     height: 20px;
 }
 
-.estadisticas img{
+.estadisticas img {
     height: 6vh;
     width: 3vw;
 }
@@ -229,6 +229,7 @@ input::placeholder {
 .Sub_cursos {
     border-bottom: 1px solid #000000;
     margin-top: 2px;
+    padding-left: 2vw;
 }
 
 
@@ -258,6 +259,31 @@ hr {
     height: 5vw;
 }
 
+.circulo {
+    fill: none;
+    stroke: greenyellow;
+    stroke-width: .5vw;
+    stroke-dasharray:115;
+    stroke-dashoffset: 30;
+    stroke-linecap: round;
+    animation: rellenar 1.5s ease-in-out forwards;
+}
+
+@keyframes rellenar {
+    to {
+        stroke-dashoffset: 90;
+    }
+}
+
+.curso {
+    display: flex;
+    align-items: center;
+}
+
+.curso p {
+    font-size: 1vw;
+}
+
 .progress_bar {
     width: 15vw;
     height: 40px;
@@ -265,9 +291,10 @@ hr {
     border-radius: 25px;
 }
 
-.progress_bar span{
+.progress_bar span {
     position: relative;
     top: 10px;
+    
 }
 
 .progress_bar1 {
@@ -277,7 +304,7 @@ hr {
     border-radius: 25px;
 }
 
-.progress_bar span{
+.progress_bar span {
     position: relative;
     top: 10px;
 }
@@ -289,18 +316,19 @@ hr {
     padding-top: 1vh;
 }
 
-.titulo, .valor{
+.titulo,
+.valor {
     position: relative;
     font-size: 1.2vw;
     left: 2vw;
 }
 
 a {
-  color: inherit;         
-  text-decoration: none;  
+    color: inherit;
+    text-decoration: none;
 }
 
-.configuracion_content{
+.configuracion_content {
     display: none;
     color: #000;
     position: fixed;
@@ -313,27 +341,27 @@ a {
     margin-right: 18vw;
 }
 
-.dropdown_content h2{
+.dropdown_content h2 {
     padding-top: .6vh;
     padding-left: .8vw;
 }
 
-.Idioma{
+.Idioma {
     display: flex;
     color: #000;
 }
 
-.Idioma p{
+.Idioma p {
     font-size: 1.4vw;
 
 }
 
-.Opciones h1{
+.Opciones h1 {
     padding-left: 1vw;
     padding-top: 1vh;
 }
 
-.Idioma select{
+.Idioma select {
     position: relative;
     background: none;
     left: 1vw;
@@ -341,34 +369,34 @@ a {
     font-size: .8vw;
 }
 
-.Correo{
+.Correo {
     gap: .4vw;
     padding-left: 1vw;
     padding-top: 1vh;
 }
 
-.Correo input{
+.Correo input {
     padding-top: .4vh;
     padding-left: 1vw;
     background-color: greenyellow;
     border: none;
 }
 
-.CerrarSesion{
+.CerrarSesion {
     display: flex;
     gap: .4vw;
     padding-left: 1vw;
 }
 
-.CerrarSesion img{
+.CerrarSesion img {
     width: 1vw;
 }
 
-.configuracion:hover .configuracion_content{
+.configuracion:hover .configuracion_content {
     display: block;
 }
 
-.Notificacion_content{
+.Notificacion_content {
     position: fixed;
     display: none;
     color: #000;
@@ -378,21 +406,21 @@ a {
     padding-top: 20vh;
 }
 
-.historial_notificaciones{
+.historial_notificaciones {
     position: relative;
     left: 1vw;
 }
 
-.Notificacion_content .dropdown_content{
+.Notificacion_content .dropdown_content {
     background-color: rgb(228, 228, 228);
     border-radius: 0.8rem;
 }
 
-.notificaciones .dropdown{
+.notificaciones .dropdown {
     position: relative;
 }
 
 
-.notificaciones:hover .Notificacion_content{
+.notificaciones:hover .Notificacion_content {
     display: inline-block;
 }
