@@ -15,6 +15,7 @@ async function cursito() {
 }
 
 async function nuevoCurso() {
+    event.preventDefault()
     const entradita = document.getElementById('entrada').value.trim();
     const duracion = document.getElementById('Duracion').value.trim();
 
@@ -30,7 +31,7 @@ async function nuevoCurso() {
             
         })
     });
-    entradita.value =''
+    entradita.value ='';
     duracion.value = '';
     const data = await fetchData();
     displayCapsula(data);
