@@ -1,6 +1,6 @@
-async function cursitos() {
+async function estudianticos() {
     try {
-        const res = await fetch('https://68ac8b3a7a0bbe92cbbac5f8.mockapi.io/docente', {
+        const res = await fetch('https://68ac80727a0bbe92cbbaa61d.mockapi.io/estudiantes', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
