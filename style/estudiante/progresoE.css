@@ -142,11 +142,26 @@ body {
     gap: 40px;
     justify-content: center;
     height: 20px;
+
 }
 
 .estadisticas img {
-    height: 6vh;
+    height: 3vw;
     width: 3vw;
+}
+
+.progreso2_card {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    align-items: center;
+    column-gap: 18px;
+    border: 1px solid #9c9c9c;
+    border-radius: 6px;
+    height: 8.7vh;
+}
+
+.Estadisticas{
+    display: flex;
 }
 
 .card {
@@ -157,49 +172,7 @@ body {
     padding: 10px;
     border: 1px solid #9c9c9c;
     border-radius: 6px;
-    height: 6vw;
-}
-
-.icon {
-    height: 20px;
-    width: 20px;
-}
-
-.cursosI {
-    margin-top: 8vw;
-}
-
-.imagencita {
-    background-image: url(../../img/cursos.png);
-    position: absolute;
-    background-size: cover;
-    width: 20vw;
-    height: 13vw;
-    left: 10vw;
-    margin-top: 0.8vw;
-
-}
-
-.ver {
-    margin-top: 15vw;
-}
-
-.config {
-    display: grid;
-    grid-template-columns: 2px 1fr;
-    align-items: center;
-    column-gap: 8px;
-    padding: 10px;
-}
-
-.iconcito {
-    width: 3vw;
-    height: 3vw;
-}
-
-.Gestion_De_Cursos {
-    position: relative;
-    top: 3vw;
+    height: fit-content;
 }
 
 .Cursos,
@@ -213,7 +186,6 @@ body {
 }
 
 .Cursos {
-    font-size: 2rem;
     border-bottom: 2px solid #000000;
 }
 
@@ -221,14 +193,6 @@ body {
     border-bottom: 1px solid #000000;
     margin-top: 2px;
     padding-left: 2vw;
-}
-
-
-.Estado {
-    background-color: greenyellow;
-    border-radius: 10rem;
-    padding-bottom: 1vh;
-    padding-top: 1vh;
 }
 
 hr {
@@ -309,11 +273,30 @@ hr {
     top: 10px;
 }
 
-.Estado1 {
-    background-color: rgb(145, 145, 145);
+.Estado {
+    background-color: greenyellow;
+    width: 12vw;
     border-radius: 10rem;
     padding-bottom: 1vh;
     padding-top: 1vh;
+    justify-self: center;
+}
+
+.Estado p{
+    font-size: 1vw;
+}
+
+.Estado1 {
+    background-color: rgb(145, 145, 145);
+    width: 12vw;
+    justify-self: center;
+    border-radius: 10rem;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+}
+
+.Estado1 p{
+    font-size: 1vw;
 }
 
 .titulo,
