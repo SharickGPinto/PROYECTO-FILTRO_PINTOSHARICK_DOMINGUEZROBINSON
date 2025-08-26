@@ -78,7 +78,6 @@ async function mostrarCursos() {
             '<span><div class="' + ((c.estado || 'Activo').toLowerCase() === 'activo' ? 'Estado' : 'Estado1') + '">' + (c.estado || 'Activo') + '</div></span>' +
             '<span>' + (c.inscritos == null ? 0 : c.inscritos) + '</span>' +
             '<svg class="porcentaje"><circle class="' + ((+c.progreso || 0) >= 50 ? 'circulo' : 'circulo1') + '" r="1.5vw" cx="2vw" cy="2vw" pathlength="100"></circle></svg>' +
-            '<span class="Cantidad">' + ((+c.progreso || 0)) + '%</span>' +
             '<div class="Acciones"><span><a href="./EditarCA.html"><img src="../../img/lapiz.png" alt=""></a></span></div>';
         ref.insertAdjacentElement('afterend', row);
         ref = row;
