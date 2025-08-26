@@ -195,6 +195,7 @@ body {
 a {
   color: inherit;         
   text-decoration: none;  
+
 }
 
 .valores{
@@ -217,12 +218,19 @@ a {
 
 .circulo {
     fill: none;
-    stroke: red;
+    stroke: greenyellow;
     stroke-width: .5vw;
-    stroke-dasharray:115;
-    stroke-dashoffset: 30;
+    stroke-dasharray:185;
+    stroke-dashoffset: 50;
     stroke-linecap: round;
     animation: rellenar 1.5s ease-in-out forwards;
+}
+
+.Lecciones{
+    position: relative;
+    left: 3vw;
+    font-size: 2vw;
+    font-family: 'mayuscula';
 }
 
 @keyframes rellenar {
