@@ -50,7 +50,7 @@ Plataforma web para la gestión del aprendizaje con perfiles de **Administrador*
 - **JavaScript** (Fetch API)
 - **MockAPI** (o **JSON-Server** opcional)
 - **Git**
-- **(Figma)[https://www.figma.com/design/gnG5UiR0jEKoYFQcdv6ta2/Proyecto-js?node-id=1-2&p=f&t=Z0mhSeerEPdeqBa5-0]** (prototipado)
+- **[Figma][(ttps://www.figma.com/design/gnG5UiR0jEKoYFQcdv6ta2/Proyecto-js?node-id=1-2&p=f&t=Z0mhSeerEPdeqBa5-0)** (prototipado)
 
 ---
 
