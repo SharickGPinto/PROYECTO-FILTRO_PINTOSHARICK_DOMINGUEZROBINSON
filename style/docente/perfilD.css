@@ -236,7 +236,7 @@ span {
     display: flex;
     border: 1px solid;
     border-radius: .8rem;
-    font-size: 1vw;
+    font-size: clamp(.5vw,1vw,5vw);
     
 }
 
@@ -252,7 +252,7 @@ span {
     display: flex;
     border: 1px solid;
     border-radius: .8rem;
-    font-size: 1vw;
+    font-size: clamp(.5vw,1vw,5vw);
     
 }
 

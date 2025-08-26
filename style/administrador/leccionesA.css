@@ -337,16 +337,6 @@ input::placeholder {
     width: 10vw; 
 }
 
-.Nueva_Tarea{
-    
-    display: flex;
-    justify-self: end;
-    margin-right: 2vw;
-    text-decoration: none;
-    color: #fff;
-    width: fit-content;
-}
-
 .Subir_Contenido{
     display: flex;
     justify-self: end;

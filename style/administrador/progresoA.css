@@ -265,9 +265,20 @@ hr {
     border-radius: 25px;
 }
 
-.progress_bar span{
+.progress_bar1 span{
     position: relative;
     top: 10px;
+}
+
+.Tipo_Curso{
+    display: flex;
+    justify-content: center;
+}
+
+.Tipo_Curso p{
+    position: relative;
+    font-size: 1vw;
+    top: 1vh;
 }
 
 .Estado1 {

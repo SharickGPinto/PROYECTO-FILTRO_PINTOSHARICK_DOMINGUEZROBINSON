@@ -220,16 +220,18 @@ hr{
 }
 
 .nueva{
+    background-image: url(../../img/agregarblanc.webp);
+    background-size: 1vw;
+    background-repeat: no-repeat;
+    background-position: 10%;
     background-color:  #1e3a8a;
     border-radius: 10rem;
     padding-bottom: 1vh;
-    width: 8vw;
+    width: 10vw;
     margin-left: 87vw;
     padding-top: 1vh;
     color: white;
     text-align: center;
-    cursor: pointer;
-    position: absolute;
 }
 
 a {
