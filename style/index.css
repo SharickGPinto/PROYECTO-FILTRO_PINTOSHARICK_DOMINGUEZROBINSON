@@ -20,7 +20,7 @@ body {
 }
 
 .contenedor{
-    margin-top: 10vh;
+    margin-top: 9vh;
     border: 2px solid gray;
     border-radius: 1rem;
     width: 15vw;
@@ -60,6 +60,7 @@ input::placeholder{
     margin-top: 1rem;
     padding-top: 3vw;
     border-radius: 1rem;
+    text-align: center;
 }
 
 p{
@@ -167,12 +168,18 @@ option{
     }
 
     p {
-        font-size: 1.5vw;
+        font-size: 3vw;
     }
 
     .INICIAR_SESION {
         font-size: 1.3vw;
-        padding-bottom: 1vw;
+        width: 44vw;
+    }
+
+    .INICIAR_SESION p{
+        position: relative;
+        bottom: 4vh;
+        font-size: 2.3vw;
     }
 }
 
