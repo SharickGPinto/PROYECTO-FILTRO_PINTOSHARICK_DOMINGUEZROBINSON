@@ -205,7 +205,36 @@ input::placeholder{
     justify-self: center;
     padding-top: 1vh;
 }
-.Añadir{
+
+.Asignar_estudiante{
+    background-image: url(../../img/agregarblanc.webp);
+    background-size: 1.2vw;
+    background-repeat: no-repeat;
+    background-position: 5%;
+    font-size: .8vw;
+    background-color:  #1e3a8a;
+    border-radius: 1rem;
+    width: 10vw;
+    padding-top: 1.3vh;
+    color: white;
+    text-align: center;
+}
+
+.Asignar_docente{
+    background-image: url(../../img/agregarblanc.webp);
+    background-size: 1.2vw;
+    background-repeat: no-repeat;
+    background-position: 5%;
+    font-size: .8vw;
+    background-color:  #1e3a8a;
+    border-radius: 1rem;
+    width: 10vw;
+    padding-top: 1.3vh;
+    color: white;
+    text-align: center;
+}
+
+.Añadir_curso{
     background-image: url(../../img/agregarblanc.webp);
     background-size: 1.2vw;
     background-repeat: no-repeat;
@@ -216,7 +245,7 @@ input::placeholder{
     width: 10vw;
     padding-top: 1.3vh;
     color: white;
-    text-align: end;
+    text-align: center;
 }
 
 .Opciones{

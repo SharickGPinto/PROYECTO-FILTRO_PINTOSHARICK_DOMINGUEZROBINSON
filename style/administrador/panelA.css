@@ -319,6 +319,39 @@ body {
     margin-right: 18vw;
 }
 
+.first{
+    text-align: center;
+}
+
+.curso{
+    display: flex;
+    gap: 20px;
+}
+
+.informacion p{
+    font-size: 1.4rem;
+}
+
+.Estado strong{
+    position: relative;
+    background-color: greenyellow;
+    border-radius: 1rem;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    left: 20px;
+}
+
+.Estado_1 strong{
+    position: relative;
+    background-color: rgb(145, 145, 145);
+    border-radius: 1rem;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    left: 20px;
+}
+
 .dropdown_content h2{
     padding-top: .6vh;
     padding-left: .8vw;

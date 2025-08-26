@@ -197,6 +197,11 @@ a {
   text-decoration: none;  
 }
 
+.valores{
+    position: relative;
+    left: 3.5vw;
+}
+
 .configuracion_content{
     display: none;
     color: #000;
@@ -208,6 +213,22 @@ a {
     border-radius: 0.6rem;
     z-index: 1;
     font-family: 'mayuscula';
+}
+
+.circulo {
+    fill: none;
+    stroke: red;
+    stroke-width: .5vw;
+    stroke-dasharray:115;
+    stroke-dashoffset: 30;
+    stroke-linecap: round;
+    animation: rellenar 1.5s ease-in-out forwards;
+}
+
+@keyframes rellenar {
+    to {
+        stroke-dashoffset: 90;
+    }
 }
 
 .dropdown_content h2{
