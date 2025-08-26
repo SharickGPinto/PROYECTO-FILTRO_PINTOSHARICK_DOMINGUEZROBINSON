@@ -23,10 +23,9 @@ body {
     margin-top: 5%;
     border: 2px solid gray;
     border-radius: 1rem;
-    width: 30vw;
-    min-height: fit-content;
+    width: 15vw;
+    height: fit-content;
     min-width: fit-content;
-    height: 40vh;
     justify-self: center;
 }
 
@@ -40,26 +39,27 @@ input{
 input::placeholder{
     position: relative;
     text-align: center;
+    bottom: .6vw;
     font-size: 1.2rem;
 }
 
 .login_email{
-    background-image: url(../img/email-icon-mail-sign-suitable-for-web-page-digital-communication-symbol-envelope-icons-vector.jpg);
-    background-size: 2rem;
+    background-image: url(../img/email.jpg);
+    background-size: 3vw;
     background-repeat: no-repeat;
     background-position: 5%;
     margin-top: 3rem;
-    padding: 1rem;
+    padding-top: 3vw;
     border-radius: 1rem;
 }
 
 .login_password{
-    background-image: url(../img/email-icon-mail-sign-suitable-for-web-page-digital-communication-symbol-envelope-icons-vector.jpg);
-    background-size: 2rem;
+    background-image: url(../img/ContraseñaIcon.png);
+    background-size: 3vw;
     background-repeat: no-repeat;
     background-position: 5%;
     margin-top: 1rem;
-    padding: 1rem;
+    padding-top: 3vw;
     border-radius: 1rem;
 }
 
@@ -68,53 +68,27 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 2vw;
 }
 
 .INICIAR_SESION{
     display: flex;
-    margin-top: 5%;
+    margin-top: 5vh;
     background-color: rgb(30, 58, 138);
     justify-content: center;
     justify-self: center;
-    width: 80%;
-    height: 15%;
+    width:fit-content;
     border-radius: 1rem ;
-    font-size: 1.8rem;
+    font-size: 1.8vw;
 }
 
-
-.INICIAR_SESION a{
+.INICIAR_SESION p{
     color: white;
-    text-decoration: none;
 }
 
-.forsaken_password{
-    display: flex;
-    justify-self: center;
-    margin-top: 5%;
-}
-
-.Olvidaste_la_contraseña a{
-    
-    background-color: white;
-    font-size: 1.3rem;
-    color: gray;
-    text-decoration: none;
-}
-
-select{ 
-    background-image: url(../img/perfil.png);
-    position:relative;
-    left: 10%;
-    width: 24vw;
-    border: 2px solid;
-    background-size: 2.3rem;
-    background-repeat: no-repeat;
-    background-position: 2%;
-    margin-top: 1rem;
-    padding: 1rem;
-    border-radius: 1rem;
+input::placeholder{
+    margin-top: auto;
+    font-size: 2vw;
 }
 
 option{
@@ -123,5 +97,82 @@ option{
 
 .Olvidaste_la_contraseña{
     border: none;
+}
+
+
+@media (max-width: 768px) {
+    .contenedor {
+        width: 90vw;
+        height: auto;
+        margin-top: 10%;
+    }
+
+    input {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    input::placeholder {
+        font-size: 1rem;
+    }
+
+    .login_email,
+    .login_password {
+        background-size: 6vw;
+        background-position: 5%;
+        padding-top: 10vw;
+    }
+
+    p {
+        position: relative;
+        font-size: 4vw;
+    }
+
+    .INICIAR_SESION {
+        font-size: 4vw;
+        padding: 0.5rem 1rem;
+    }
+
+    .login_email::placeholder {
+        position: relative;
+        bottom: 3.5vw;
+        font-size: 5vw;
+    }
+
+    .login_password::placeholder {
+        position: relative;
+        bottom: 3.5vw;
+        font-size: 5vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contenedor {
+        width: 25vw;
+        height: fit-content;
+    }
+
+    input {
+        width: 80%;
+        font-size: 1.2rem;
+    }
+
+    input::placeholder {
+        font-size: 1.5vw;
+    }
+
+    .login_email,
+    .login_password {
+        background-size: 2vw;
+        padding-top: 2vw;
+    }
+
+    p {
+        font-size: 1.5vw;
+    }
+
+    .INICIAR_SESION {
+        font-size: 1.3vw;
+    }
 }
 

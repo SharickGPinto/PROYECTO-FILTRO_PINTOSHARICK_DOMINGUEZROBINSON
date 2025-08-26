@@ -168,9 +168,6 @@ body {
     font-size: 1.2vw;
 }
 
-span {
-    display: block;
-}
 
 .Segundo_contenedor {
     justify-self: center;
@@ -193,6 +190,7 @@ span {
 }
 
 .card span {
+    display: block;
     border: 1px solid;
     padding: .7vw;
     border-radius: .7rem;
@@ -213,8 +211,9 @@ span {
     display: grid;
     grid-template-columns: 1fr 1fr ;
     padding: 1rem;
-    justify-self: center;
-    gap: 10vw;
+    padding-left: 14vw;
+    gap: 60px;
+    width: fit-content;
 }
 
 .titulo_3 h1{
@@ -226,23 +225,35 @@ span {
 .cursos_abajo span {
     height: fit-content;
     border: 1px solid;
-    width: max-content;
 }
 
 
 .curso p {
     position: relative;
     float: right;
+    align-content: center;
 }
 
 .first{
+    width: 16vw;
     border: 1px solid;
     border-radius: .8rem;
+    display: flex;
+}
+
+.first p{
+    font-size: 1vw;
 }
 
 .second{
+    display: flex;
     border: 1px solid;
     border-radius: .8rem;
+    width: 16vw;
+}
+
+.second p{
+    font-size: 1vw;
 }
 
 .configuracion_content{
@@ -251,12 +262,13 @@ span {
     position: fixed;
     background-color: rgb(228, 228, 228);
     width: 20vw;
-    height: 20vh;
+    height: fit-content;
     border-radius: 0.6rem;
     font-family: 'mayuscula';
     margin-top: 28vh;
     margin-right: 18vw;
 }
+
 
 .dropdown_content h2{
     padding-top: .6vh;
@@ -265,6 +277,7 @@ span {
 
 .Idioma{
     display: flex;
+    padding-left: 1vw;
     color: #000;
 }
 
