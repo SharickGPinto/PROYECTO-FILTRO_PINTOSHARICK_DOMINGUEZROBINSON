@@ -146,17 +146,16 @@ body {
     object-fit: cover;
     background-repeat: no-repeat;
     border-radius: 1rem;
-    padding: 2%;
-    width: 34%;
-    min-width: 25%;
+    padding: 2vh;
+    width: 14vw;
     overflow: hidden;
 }
 
 input::placeholder{
     position: relative;
-    left: 20%;
+    text-align: center;
     top: .5vh;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 .Cursos, .Sub_cursos {
@@ -164,12 +163,12 @@ input::placeholder{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
     text-align: center;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1rem;
     margin-top: 3vw;
 }
 
 .Cursos {
-    font-size: 2rem;
+    font-size: 2vw;
     border-bottom: 2px solid #000000;
 }
 
@@ -183,13 +182,15 @@ input::placeholder{
     border-radius: 10rem;
     padding-bottom: 1vh;
     padding-top: 1vh;
+    width: 13vw;
+    justify-self: center;
 }
 
 select{
-    margin-left: 5%;
+    margin-left: 2vw;
     background-color: #fff;
     border: none;
-    font-size: 2rem;
+    font-size: 1.4vw;
 }
 
 hr{
@@ -202,6 +203,7 @@ hr{
     border: none;
     color: #fff;
     cursor: pointer;
+    font-size: 1.4vw;
 }
 
 .Enviar{
@@ -214,14 +216,20 @@ hr{
 
 .Estado1{
     background-color: rgb(140, 229, 173);
+    justify-self: center;
     border-radius: 10rem;
     padding-bottom: 1vh;
     padding-top: 1vh;
+    width: 13vw;
 }
 
 a {
   color: inherit;         
   text-decoration: none;  
+}
+
+span{
+    font-size: clamp(1.2vw, 1.4vw, 2.3vw);
 }
 
 .configuracion_content{
@@ -320,3 +328,4 @@ a {
 .notificaciones:hover .Notificacion_content{
     display: inline-block;
 }
+
