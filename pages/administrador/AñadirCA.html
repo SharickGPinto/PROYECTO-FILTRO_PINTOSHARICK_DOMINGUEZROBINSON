@@ -13,12 +13,13 @@
         <div class="cabeza">
             <div class="Lms">LMS</div>
             <div class="panel">
-                <a href="../administrador/panelA.html">PANEL</a></div>
+                <a href="../administrador/panelA.html">PANEL</a>
+            </div>
             <div class="cursos"><a href="../administrador/gestionCA.html">CURSOS</a></div>
             <div class="asignaciones"> <a href="../administrador/gestionAA.html">ASIGNACIONES</a></div>
             <div class="progreso"><a href="../administrador/progresoA.html">PROGRESO</a></div>
             <div class="notificaciones"><img src="./../../img/notificacion.png" alt="">
-            <div class="Notificacion_content">
+                <div class="Notificacion_content">
 
                     <div class="dropdown">
 
@@ -46,7 +47,7 @@
                 </div>
             </div>
             <div class="configuracion"><img src="./../../img/configuracion.png" alt="">
-            <div class="configuracion_content">
+                <div class="configuracion_content">
 
 
                     <div class="dropdown_configuracion">
@@ -80,7 +81,8 @@
                     </div>
                 </div>
             </div>
-            <div class="perfil"><a href="../administrador/perfilA.html"><img src="./../../img/perfil.png" alt=""></a></div>
+            <div class="perfil"><a href="../administrador/perfilA.html"><img src="./../../img/perfil.png" alt=""></a>
+            </div>
         </div>
     </header>
 
@@ -102,19 +104,21 @@
                     </select>
                 </div>
             </div>
-            <br />     
+            <br />
 
             <div class="fila">
-                <p>Duracion del Curso</p>    
+                <p>Duracion del Curso</p>
                 <input class="Duracion" type="text" placeholder="Duracion del Curso..">
             </div>
 
             <div class="acciones">
-                <button class="btn btn-secundario"><a href="./gestionAA.html">cancelar</a></button>
-                <button class="btn btn-primario" onclick="nuevoCurso()"><a href="">Confirmar</a></button>
+                <button class="btn btn-secundario"><a href="./gestionCA.html">cancelar</a></button>
+                <button class="btn btn-primario"><a href="#"
+                        onclick="nuevoCurso(); return false;">Confirmar</a></button>
             </div>
         </div>
     </main>
 </body>
 <script src="../../script/administrador/cursos.js"></script>
+
 </html>
