@@ -5,26 +5,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel</title>
-<<<<<<< HEAD
     <link rel="stylesheet" href="./../../style/docente/panelD.css">
-=======
     <link rel="stylesheet" href="./../../style/administrador/panelA.css">
->>>>>>> 4ef998b2ec138aa7e56f517b98078b7b2adf2191
+
 </head>
 
 <body>
     <header>
         <div class="cabeza">
             <div class="Lms">LMS</div>
-<<<<<<< HEAD
             <div class="panel">
-                <a href="../administrador/panelA.html">PANEL</a></div>
+                <a href="../administrador/panelA.html">PANEL</a>
+            </div>
             <div class="cursos"><a href="../administrador/gestionCA.html">CURSOS</a></div>
             <div class="asignaciones"> <a href="../administrador/gestionAA.html">ASIGNACIONES</a></div>
             <div class="progreso"><a href="../administrador/progresoA.html">PROGRESO</a></div>
-            <div class="notificaciones"><img src="./../../img/notificacion.png" alt=""></div>
-            <div class="configuracion"><img src="./../../img/configuracion.png" alt=""></div>
-            <div class="perfil"><a href="../administrador/perfilA.html"><img src="./../../img/perfil.png" alt=""></a></div>
+            <div class="notificaciones"><img src="./../../img/notificacion.png" alt="">
+                <div class="Notificacion_content">
+
+                    <div class="dropdown">
+
+                        <div class="dropdown_content">
+
+                            <h2>Notificaciones</h2>
+
+                            <div class="historial_notificaciones">
+
+
+                                <br>
+                                <a href="http://">Historial De Notificaciones</a>
+
+                            </div>
+
+
+                            <div class="Correo">
+                                <input type="button" value="">
+                                <span>Activar/Desactivar Notificaciones</span>
+                            </div>
+                            <br>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="configuracion"><img src="./../../img/configuracion.png" alt="">
+                <div class="configuracion_content">
+
+
+                    <div class="dropdown_configuracion">
+
+                        <div class="dropdown_content">
+
+                            <h2>Configuracion</h2>
+                            <br>
+
+                            <div class="Idioma">
+
+                                <p>Idioma:</p>
+                                <select>
+                                    <option value="">Español</option>
+                                    <option value="">Ingles</option>
+                                </select>
+
+                            </div>
+
+                            <div class="Correo">
+                                <input type="button" value="">
+                                <span>Correo Electronico</span>
+                            </div>
+                            <br>
+                            <div class="CerrarSesion">
+                                <img src="../../img/log out.png" alt="">
+                                <a href="./../../index.html">Cerrar Sesion</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="perfil"><a href="../administrador/perfilA.html"><img src="./../../img/perfil.png" alt=""></a>
+            </div>
         </div>
     </header>
     <br />
@@ -35,11 +95,11 @@
     <div class="panel">
         <h1>panel</h1>
     </div>
-    
+
     <br />
 
     <div class="Titulo">
-        <h1>CURSOS ASIGNADOS</h1>
+        <h1>CURSOS EXISTENTES</h1>
     </div>
 
     <br>
@@ -50,14 +110,30 @@
         <div class="curso">
             <div class="first">
                 <img src="../../img/pc.png" alt="" width="100">
-                <p>Desarrollo</p>
+                <span><h3>Desarrollo</h3></span>
+            </div>
+            <div class="informacion">
+                <br>
+                <p>profesor: <strong>Antonio Martinez</strong></p>
+                <br>
+                <p>Estudiante Inscritos: <strong>2</strong></p>
+                <br>
+                <div class="Estado">Estado:<strong>Activo</strong></div>
             </div>
         </div>
 
-        <div class="curso1">
+        <div class="curso">
             <div class="first">
-                <img src="../../img/matec.jpg" alt="" width="100">
-                <p>Matematicas <br> Avanzadas</p>
+                <img src="../../img/matec.png" alt="" width="100">
+                <span><h3>Matematicas <br> Avanzadas</h3></span>
+            </div>
+            <div class="informacion">
+                <br>
+                <p>profesor: <strong>Antonio Martinez</strong></p>
+                <br>
+                <p>Estudiante Inscritos: <strong>2</strong></p>
+                <br>
+                <div class="Estado_1">Estado:<strong>Inactivo</strong></div>
             </div>
         </div>
 
@@ -65,32 +141,19 @@
 
     <br>
 
-    <div class="ver" > <a href="./leccionesD.html">
-        <div class="cursos2 config">
-            <img class="iconcito" src="../../img/ListaActividades.png" alt="">
+    <div class="ver"> <a href="./leccionesA.html">
+            <div class="cursos2 config">
+                <img class="iconcito" src="../../img/ListaActividades.png" alt="">
 
-            <div>
-                <div class="titulo">
-                    <p> VER LECCIONES Y CONTENIDO</p>
-                </div></a>
-            </div>
+                <div>
+                    <div class="titulo">
+                        <p> VER LECCIONES Y CONTENIDO</p>
+                    </div>
+        </a>
+    </div>
 
-        </div>
+    </div>
     </div>
 </body>
-=======
-            <div class="panel">PANEL</div>
-            <div class="cursos">CURSOS</div>
-            <div class="asignaciones">ASIGNACIONES</div>
-            <div class="progreso">PROGRESO</div>
-            <div class="notificaciones"><img src="./../../img/notificacion.png" alt=""></div>
-            <div class="configuracion"><img src="./../../img/configuracion.png" alt=""></div>
-            <div class="perfil"><img src="./../../img/perfil.png" alt=""></div>
-        </div>
-    </header>
 
-
-</body>
-
->>>>>>> 4ef998b2ec138aa7e56f517b98078b7b2adf2191
 </html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../style/administrador/gestionCA.css">
+    <link rel="stylesheet" href="../../style/administrador/Eliminar.css">
 </head>
 
 <body>
@@ -13,13 +13,12 @@
         <div class="cabeza">
             <div class="Lms">LMS</div>
             <div class="panel">
-                <a href="../administrador/panelA.html">PANEL</a>
-            </div>
+                <a href="../administrador/panelA.html">PANEL</a></div>
             <div class="cursos"><a href="../administrador/gestionCA.html">CURSOS</a></div>
             <div class="asignaciones"> <a href="../administrador/gestionAA.html">ASIGNACIONES</a></div>
             <div class="progreso"><a href="../administrador/progresoA.html">PROGRESO</a></div>
             <div class="notificaciones"><img src="./../../img/notificacion.png" alt="">
-                <div class="Notificacion_content">
+            <div class="Notificacion_content">
 
                     <div class="dropdown">
 
@@ -47,7 +46,7 @@
                 </div>
             </div>
             <div class="configuracion"><img src="./../../img/configuracion.png" alt="">
-                <div class="configuracion_content">
+            <div class="configuracion_content">
 
 
                     <div class="dropdown_configuracion">
@@ -81,84 +80,23 @@
                     </div>
                 </div>
             </div>
-            <div class="perfil"><a href="../administrador/perfilA.html"><img src="./../../img/perfil.png" alt=""></a>
-            </div>
+            <div class="perfil"><a href="../administrador/perfilA.html"><img src="./../../img/perfil.png" alt=""></a></div>
         </div>
     </header>
-    <div class="Gestion_De_Cursos">
-        <p>GESTION DE CURSOS</p>
-        <br />
-        <input type="text" name="busqueda" id="busqueda_cursos" placeholder="Buscar cursos...">
-    </div>
 
-    <div class="Cursos">
-        <p>Cursos</p>
-        <p>Categoria</p>
-        <p>Docente</p>
-        <p>Duracion</p>
-        <p>Estado</p>
-        <p>Estudiantes Inscritos</p>
-        <p>Progreso</p>
-        <p>Acciones</p>
-    </div>
+    <main class="contenedor">
+        <div class="tarjeta">
+            <div class="titulo">Eliminar Tarea/Evaluacion</div>
 
-    <div class="Sub_cursos">
+            <div class="Seguro"><strong>Seguro que Quieres Eliminar?</strong></div>
 
-        <div class="Tipo_Curso">
-            <img src="../../img/pc.png" alt="">
-            <p>Desarrollo</p>
+
+            <div class="acciones">
+                <button class="btn btn-secundario"><a href="./leccionesA.html">Cancelar</a></button>
+                <button class="btn btn-primario"><a href="./leccionesA.html">Confirmar</a></button>
+            </div>
         </div>
-
-        <span>Desarrollo</span>
-        <span>Antonio Martinez</span>
-        <span>10 Semanas</span>
-        <span>
-
-            <div class="Estado">Activo</div>
-        </span>
-
-        <span>22</span>
-
-        <svg class="porcentaje">
-            <circle class="circulo" r="1.5vw" cx="2vw" cy="2vw" pathlength="100" />
-        </svg>
-        <span class="Cantidad">64%</span>
-
-        <div class="Acciones">
-            <span><a href="./EditarCA.html"><img src="../../img/lapiz.png" alt=""></a></span>
-        </div>
-
-    </div>
-    <div class="Sub_cursos">
-
-        <div class="Tipo_Curso">
-            <img src="../../img/matec.png" alt="">
-            <p>Matematicas <br> Avanzadas</p>
-        </div>
-
-        <span>Matematicas Avanzadas</span>
-        <span>Antonio Martinez</span>
-        <span>12 Semanas</span>
-
-        <span>
-            <div class="Estado1">Inactivo</div>
-        </span>
-
-        <span>15</span>
-        
-
-        <svg class="porcentaje">
-            <circle class="circulo1" r="1.5vw" cx="2vw" cy="2vw" pathlength="100" />
-        </svg>
-        <span class="Cantidad">24%</span>
-
-
-        <div class="Acciones">
-            <span><a href="./EditarCA.html"><img src="../../img/lapiz.png" alt=""></a></span>
-        </div>
-
-    </div>
-
+    </main>
 </body>
-<script src="../../script/administrador/cursos.js"></script>
+
 </html>
